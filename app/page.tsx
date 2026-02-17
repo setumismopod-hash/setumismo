@@ -120,7 +120,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 px-6 py-12 sm:flex-row sm:justify-between">
           <div className="flex gap-6 text-sm text-muted">
             <a
-              href="https://instagram.com/setumismo"
+              href="https://www.instagram.com/comosertumismo"
               target="_blank"
               rel="noopener noreferrer"
               className="transition-colors hover:text-foreground"
@@ -128,7 +128,7 @@ export default function Home() {
               Instagram
             </a>
             <a
-              href="https://youtube.com/@setumismo"
+              href="https://www.youtube.com/@Setumismo.elpodcast"
               target="_blank"
               rel="noopener noreferrer"
               className="transition-colors hover:text-foreground"
@@ -136,7 +136,7 @@ export default function Home() {
               YouTube
             </a>
             <a
-              href="https://tiktok.com/@setumismo"
+              href="https://www.tiktok.com/@comosertumismo"
               target="_blank"
               rel="noopener noreferrer"
               className="transition-colors hover:text-foreground"
