@@ -1,19 +1,53 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import Link from "next/link";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [recursosOpen, setRecursosOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const heroBgRef = useRef<HTMLDivElement>(null);
+
+  // Drag-to-scroll for chapters slider on desktop
+  const sliderRef = useRef<HTMLDivElement>(null);
+  const isDragging = useRef(false);
+  const startX = useRef(0);
+  const scrollLeft = useRef(0);
+
+  const handleMouseDown = useCallback((e: React.MouseEvent) => {
+    const slider = sliderRef.current;
+    if (!slider) return;
+    isDragging.current = true;
+    slider.style.cursor = "grabbing";
+    startX.current = e.pageX - slider.offsetLeft;
+    scrollLeft.current = slider.scrollLeft;
+  }, []);
+
+  const handleMouseMove = useCallback((e: React.MouseEvent) => {
+    if (!isDragging.current) return;
+    e.preventDefault();
+    const slider = sliderRef.current;
+    if (!slider) return;
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX.current) * 1.5;
+    slider.scrollLeft = scrollLeft.current - walk;
+  }, []);
+
+  const handleMouseUp = useCallback(() => {
+    isDragging.current = false;
+    if (sliderRef.current) sliderRef.current.style.cursor = "grab";
+  }, []);
 
   useEffect(() => {
     // Scroll detection for navbar
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
+      if (heroBgRef.current) {
+        heroBgRef.current.style.transform = `translateY(${window.scrollY * 0.3}px)`;
+      }
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     // IntersectionObserver for scroll animations
     const observer = new IntersectionObserver(
@@ -187,7 +221,13 @@ export default function Home() {
       {/* Hero (100vh) */}
       <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden">
         {/* Background gradient — prepared for <video> replacement */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#1a1a1a_0%,_#0a0a0a_70%)]" />
+        <div
+          ref={heroBgRef}
+          className="absolute inset-0 will-change-transform bg-cover bg-center"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1920&q=80')" }}
+        />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/50" />
 
         {/* [PLACEHOLDER] SVG overlay de dibujos a mano */}
         <div className="absolute inset-0" />
@@ -218,9 +258,11 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-10 md:grid-cols-[280px_1fr] items-start">
             {/* Podcast cover */}
-            <div className="aspect-square bg-border/30 rounded-md flex items-center justify-center text-sm text-muted">
-              [PLACEHOLDER] Portada del Podcast
-            </div>
+            <img
+              src="/podcast-cover.png"
+              alt="Sé Tú Mismo - El Podcast"
+              className="aspect-square rounded-md object-cover"
+            />
 
             <div>
               <h2 className="font-[family-name:var(--font-display)] text-4xl font-bold tracking-tight">
@@ -279,7 +321,14 @@ export default function Home() {
         </div>
         <div className="mt-10 overflow-hidden">
           <div className="mx-auto max-w-6xl px-6">
-            <div className="flex gap-6 overflow-x-scroll pb-4 scrollbar-hide snap-x snap-mandatory -mr-6">
+            <div
+              ref={sliderRef}
+              onMouseDown={handleMouseDown}
+              onMouseMove={handleMouseMove}
+              onMouseUp={handleMouseUp}
+              onMouseLeave={handleMouseUp}
+              className="flex gap-6 overflow-x-scroll pb-4 scrollbar-hide snap-x snap-mandatory -mr-6 cursor-grab select-none"
+            >
               {[1, 2, 3, 4].map((i) => (
                 <div
                   key={i}
