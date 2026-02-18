@@ -54,7 +54,7 @@ export default async function PostPage({ params }: { params: Params }) {
           {post.title}
         </h1>
         <div
-          className="prose mt-12 max-w-none prose-headings:font-semibold prose-headings:tracking-tight prose-p:text-muted prose-a:text-foreground prose-a:underline prose-strong:text-foreground prose-li:text-muted"
+          className="prose prose-neutral mt-12 max-w-none"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
       </article>

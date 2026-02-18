@@ -26,7 +26,7 @@ export function getAllPosts(): Post[] {
       return {
         slug: data.slug || fileName.replace(/\.md$/, ""),
         title: data.title,
-        date: data.date,
+        date: String(data.date),
         excerpt: data.excerpt,
       };
     });
@@ -48,7 +48,7 @@ export async function getPostBySlug(
   return {
     slug: data.slug || slug,
     title: data.title,
-    date: data.date,
+    date: String(data.date),
     excerpt: data.excerpt,
     content: processedContent.toString(),
   };
