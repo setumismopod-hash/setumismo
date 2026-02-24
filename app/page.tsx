@@ -7,7 +7,14 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [recursosOpen, setRecursosOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [currentVideo, setCurrentVideo] = useState(0);
   const heroBgRef = useRef<HTMLDivElement>(null);
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
+
+  const heroVideos = [
+    "/hero-1.mp4",
+    "/hero-2.mp4",
+  ];
 
   // Drag-to-scroll for chapters slider on desktop
   const sliderRef = useRef<HTMLDivElement>(null);
@@ -38,6 +45,27 @@ export default function Home() {
     isDragging.current = false;
     if (sliderRef.current) sliderRef.current.style.cursor = "grab";
   }, []);
+
+  // Video slideshow: play/pause based on current index
+  useEffect(() => {
+    videoRefs.current.forEach((video, i) => {
+      if (!video) return;
+      if (i === currentVideo) {
+        video.currentTime = 0;
+        video.play().catch(() => {});
+      } else {
+        video.pause();
+      }
+    });
+  }, [currentVideo]);
+
+  // Rotate every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentVideo((prev) => (prev + 1) % heroVideos.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [heroVideos.length]);
 
   useEffect(() => {
     // Scroll detection for navbar
@@ -220,30 +248,37 @@ export default function Home() {
 
       {/* Hero (100vh) */}
       <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden">
-        {/* Background gradient — prepared for <video> replacement */}
-        <div
-          ref={heroBgRef}
-          className="absolute inset-0 will-change-transform bg-cover bg-center"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1920&q=80')" }}
-        />
+        {/* Video slideshow background */}
+        <div ref={heroBgRef} className="absolute inset-0 will-change-transform">
+          {heroVideos.map((src, i) => (
+            <video
+              key={src}
+              ref={(el) => { videoRefs.current[i] = el; }}
+              src={src}
+              muted
+              playsInline
+              preload="auto"
+              className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${
+                i === currentVideo ? "opacity-100" : "opacity-0"
+              }`}
+            />
+          ))}
+        </div>
         {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-black/50" />
-
-        {/* [PLACEHOLDER] SVG overlay de dibujos a mano */}
-        <div className="absolute inset-0" />
+        <div className="absolute inset-0 bg-black/40" />
 
         {/* Hero content */}
-        <div className="relative z-10 text-center px-6">
+        <div className="relative z-10 text-center px-6 text-white">
           <h1 className="font-[family-name:var(--font-display)] text-6xl sm:text-7xl md:text-8xl font-bold tracking-tight uppercase">
             Sé Tú Mismo
           </h1>
-          <p className="mt-6 max-w-lg mx-auto text-lg text-muted">
+          <p className="mt-6 max-w-lg mx-auto text-lg text-white/70">
             Un espacio para vivir la vida que quieres.
           </p>
         </div>
 
         {/* Credit */}
-        <span className="absolute bottom-8 right-16 text-sm italic text-muted z-10">
+        <span className="absolute bottom-8 right-16 text-sm italic text-white/70 z-10">
           con Gaxpar
         </span>
 
@@ -269,7 +304,7 @@ export default function Home() {
                 El Podcast
               </h2>
               <p className="mt-4 max-w-xl text-muted">
-                [PLACEHOLDER] Descripción del podcast...
+                Sé Tú Mismo es un podcast para los que están cansados de vivir en piloto automático y quieren salir de ahí. Cada episodio es una conversación honesta entre tú y yo sobre lo que vivimos a diario y cómo nuestra forma de ser crea la realidad que experimentamos (y qué podemos hacer al respecto). Es un espacio espontáneo, profundo y cercano donde compartimos herramientas concretas y puntos de vista que pueden, o no, serte útiles.
               </p>
 
               {/* Platform buttons */}
@@ -313,7 +348,7 @@ export default function Home() {
       </section>
 
       {/* Capítulos — white */}
-      <section className="bg-[#f5f5f0] text-[#0a0a0a] py-24 animate-on-scroll">
+      <section className="bg-background text-foreground py-24 animate-on-scroll">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="font-[family-name:var(--font-display)] text-4xl font-bold tracking-tight">
             Capítulos
@@ -332,9 +367,9 @@ export default function Home() {
               {[1, 2, 3, 4].map((i) => (
                 <div
                   key={i}
-                  className="group flex-none w-72 border border-[#d4d4d0] p-4 transition-colors hover:border-[#999] snap-start"
+                  className="group flex-none w-72 border border-border p-4 transition-colors hover:border-muted snap-start"
                 >
-                  <div className="aspect-video bg-[#d4d4d0] flex items-center justify-center text-sm text-[#666]">
+                  <div className="aspect-video bg-border flex items-center justify-center text-sm text-muted">
                     [PLACEHOLDER] Miniatura Ep. {i}
                   </div>
                   <h3 className="mt-3 text-sm font-semibold">
@@ -352,9 +387,11 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-12 md:grid-cols-2 items-center">
             {/* Photo placeholder */}
-            <div className="aspect-square bg-border/30 flex items-center justify-center text-sm text-muted">
-              [PLACEHOLDER] Foto
-            </div>
+            <img
+              src="/foto-gax.jpg"
+              alt="Gaxpar"
+              className="aspect-square rounded-md object-cover"
+            />
 
             {/* Text */}
             <div>
@@ -362,14 +399,10 @@ export default function Home() {
                 Sobre Gaxpar
               </h2>
               <p className="mt-6 text-muted leading-relaxed">
-                [PLACEHOLDER] Primer párrafo de bio. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua.
+                Desde chico me sentí llamado a hacer las cosas de manera diferente. Dejar carreras, cambiar de rumbo, irme lejos, volver. Nunca me consideré un rebelde, sino alguien dejándose llevar por la necesidad de vivir una vida que tuviera sentido para mí y no dejarme arrastrar por la que &quot;me tocó&quot;. Desde siempre tuve una inquietud espiritual por explorar la vida desde otros ojos, y en ese camino me encontré con el autoconocimiento, donde hallé respuestas a preguntas que incesantemente buscaba afuera. Hoy estoy convencido de que todos tenemos una verdad dentro que vale la pena descubrir.
               </p>
               <p className="mt-4 text-muted leading-relaxed">
-                [PLACEHOLDER] Segundo párrafo de bio. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
+                A eso me dedico: acompañar a personas a cambiar la forma en que perciben y crean su realidad para que puedan vivir una vida alineada con quienes realmente son. A través de Sé Tú Mismo, el coaching y el contenido que creo, busco abrir espacios de conversación profundos que inspiren a mirarnos con otros ojos y vivir desde un lugar más honesto con quienes somos.
               </p>
               <a
                 href="#newsletter"
@@ -383,13 +416,13 @@ export default function Home() {
       </section>
 
       {/* Newsletter */}
-      <section id="newsletter" className="bg-[#f5f5f0] text-[#0a0a0a] py-24 animate-on-scroll">
+      <section id="newsletter" className="bg-background text-foreground py-24 animate-on-scroll">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto max-w-xl text-center">
             <h2 className="font-[family-name:var(--font-display)] text-4xl font-bold tracking-tight">
               Recibe ideas que importan
             </h2>
-            <p className="mt-4 text-[#555]">
+            <p className="mt-4 text-muted">
               Ideas, reflexiones y herramientas para vivir con más intención.
               Directo a tu bandeja.
             </p>
@@ -403,11 +436,11 @@ export default function Home() {
                 name="fields[email]"
                 placeholder="tu@email.com"
                 required
-                className="flex-1 border border-[#ccc] bg-transparent px-4 py-3 text-sm outline-none transition-colors placeholder:text-[#999] focus:border-[#0a0a0a]"
+                className="flex-1 border border-border bg-transparent px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted focus:border-foreground"
               />
               <button
                 type="submit"
-                className="rounded-full bg-[#0a0a0a] px-6 py-3 text-sm font-medium text-[#f5f5f0] transition-opacity hover:opacity-80"
+                className="rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-opacity hover:opacity-80"
               >
                 Suscribirme
               </button>

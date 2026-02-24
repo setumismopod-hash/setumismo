@@ -2,10 +2,10 @@
 @plugin "@tailwindcss/typography";
 
 @theme inline {
-  --color-background: #0a0a0a;
-  --color-foreground: #f5f5f0;
-  --color-muted: #888888;
-  --color-border: #222222;
+  --color-background: #ffffff;
+  --color-foreground: #1a1a1a;
+  --color-muted: #666666;
+  --color-border: #e5e5e5;
   --color-accent: #c8b89a;
   --font-sans: var(--font-inter);
   --font-display: var(--font-display);
@@ -91,7 +91,7 @@ body::before {
   inset: 0;
   z-index: 9999;
   pointer-events: none;
-  opacity: 0.008;
+  opacity: 0.03;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
   background-repeat: repeat;
 }
