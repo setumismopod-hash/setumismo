@@ -268,11 +268,11 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40" />
 
         {/* Hero content */}
-        <div className="relative z-10 text-center px-6 text-white">
+        <div className="relative z-10 text-left px-6 sm:px-16 text-white max-w-6xl w-full">
           <h1 className="font-[family-name:var(--font-display)] text-6xl sm:text-7xl md:text-8xl font-bold tracking-tight uppercase">
             Sé Tú Mismo
           </h1>
-          <p className="mt-6 max-w-lg mx-auto text-lg text-white/70">
+          <p className="mt-6 max-w-lg text-lg text-white/70">
             Un espacio para vivir la vida que quieres.
           </p>
         </div>
