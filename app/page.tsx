@@ -366,18 +366,51 @@ export default function Home() {
               onMouseLeave={handleMouseUp}
               className="flex gap-6 overflow-x-scroll pb-4 scrollbar-hide snap-x snap-mandatory -mr-6 cursor-grab select-none"
             >
-              {[1, 2, 3, 4].map((i) => (
-                <div
-                  key={i}
-                  className="group flex-none w-72 border border-border p-4 transition-colors hover:border-muted snap-start"
+              {[
+                {
+                  title: "Tus hábitos no cambian porque no quieres dejar de ser tú",
+                  ep: "Ep. 127",
+                  url: "https://open.spotify.com/episode/0RvdZxwCiDvXkz7qjvEXQ0?si=SsqpC9u4QPWI5vz52si6dQ",
+                  cover: "/ep-127.jpg",
+                },
+                {
+                  title: "Respira y sigue: el arte de no engancharte con la mente",
+                  ep: "Ep. 114",
+                  url: "https://open.spotify.com/episode/6CijSIiPhsJlw9tRp2OBpa?si=VRHvClu-RfKFzvji8MBdlw",
+                  cover: "/ep-114.jpg",
+                },
+                {
+                  title: "El poder de actuar diferente (aunque incomode)",
+                  ep: "Ep. 109",
+                  url: "https://open.spotify.com/episode/6qRWddbPh8rAbESg91YNN5?si=pC6b72QORL60x5ICHIyiQg",
+                  cover: "/ep-109.jpg",
+                },
+                {
+                  title: "Cómo encontrarte a ti mismo en el caos",
+                  ep: "Ep. 52",
+                  url: "https://open.spotify.com/episode/2KAsCTXaJHf6QK8o1GpqK4?si=YuoGQvqBRWuAs-Jf437P3Q",
+                  cover: "/ep-52.jpg",
+                },
+              ].map((episode) => (
+                <a
+                  key={episode.ep}
+                  href={episode.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex-none w-72 border border-border p-4 transition-colors hover:border-foreground snap-start"
                 >
-                  <div className="aspect-video bg-border flex items-center justify-center text-sm text-muted">
-                    [PLACEHOLDER] Miniatura Ep. {i}
+                  <div className="aspect-video bg-border/30 flex items-center justify-center">
+                    <img
+                      src={episode.cover}
+                      alt={episode.title}
+                      className="h-full w-full object-cover"
+                    />
                   </div>
-                  <h3 className="mt-3 text-sm font-semibold">
-                    [PLACEHOLDER] Título del Episodio {i}
+                  <span className="mt-3 block text-xs text-muted">{episode.ep}</span>
+                  <h3 className="mt-1 text-sm font-semibold group-hover:text-accent transition-colors">
+                    {episode.title}
                   </h3>
-                </div>
+                </a>
               ))}
             </div>
           </div>
@@ -407,7 +440,7 @@ export default function Home() {
                 A eso me dedico: acompañar a personas a cambiar la forma en que perciben y crean su realidad para que puedan vivir una vida alineada con quienes realmente son. A través de Sé Tú Mismo, el coaching y el contenido que creo, busco abrir espacios de conversación profundos que inspiren a mirarnos con otros ojos y vivir desde un lugar más honesto con quienes somos.
               </p>
               <a
-                href="#newsletter"
+                href="mailto:contacto@comosertumismo.com"
                 className="mt-8 inline-block rounded-full bg-accent px-8 py-3 text-sm font-medium text-background transition-opacity hover:opacity-80"
               >
                 Trabaja conmigo
