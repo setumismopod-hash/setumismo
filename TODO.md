@@ -11,7 +11,7 @@
 
 ## Links rotos (href="#")
 
-- [ ] **Link de Apple Podcasts** — Agregar URL real del podcast en Apple Podcasts
+- [x] **Link de Apple Podcasts** — Agregar URL real del podcast en Apple Podcasts
 - [ ] **Recursos: Lista de libros** — Crear página o enlace
 - [ ] **Recursos: Guía de hábitos** — Crear página o enlace
 - [ ] **Recursos: Prompts autoconocimiento** — Crear página o enlace

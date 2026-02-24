@@ -321,7 +321,9 @@ export default function Home() {
                   Spotify
                 </a>
                 <a
-                  href="#"
+                  href="https://podcasts.apple.com/us/podcast/se-tu-mismo/id1778049117"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm transition-colors hover:border-foreground"
                 >
                   <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
