@@ -43,13 +43,20 @@ export async function getPostBySlug(
   const fileContents = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(fileContents);
 
-  const processedContent = await remark().use(html).process(content);
+  const processedContent = await remark()
+    .use(html, { sanitize: false })
+    .process(content);
+
+  // Open all external links in a new tab
+  const htmlContent = processedContent
+    .toString()
+    .replace(/<a href="(https?:\/\/[^"]+)"/g, '<a href="$1" target="_blank" rel="noopener noreferrer"');
 
   return {
     slug: data.slug || slug,
     title: data.title,
     date: String(data.date),
     excerpt: data.excerpt,
-    content: processedContent.toString(),
+    content: htmlContent,
   };
 }

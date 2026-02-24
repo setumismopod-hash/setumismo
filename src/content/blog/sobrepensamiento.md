@@ -69,7 +69,7 @@ La tercera: sal sin audífonos. Camina. Mira lo que hay alrededor. Tu mente va a
 
 Tu cerebro no es tu enemigo. Pero tampoco es el único lugar donde vives. Pensar de más no se resuelve pensando mejor. Se resuelve cuando entiendes que la mente estaba llenando un espacio que le correspondía a otra cosa.
 
-Escucha el episodio completo acá: [Episodio 129 en Spotify]([https://open.spotify.com/show/setumismo](https://open.spotify.com/episode/0VtaLQOEalTE4bZJSA6FfM?si=FyOg-xWmRmCfBzDsyo0TTQ))
+Escucha el episodio completo acá: [Episodio 129 en Spotify](https://open.spotify.com/episode/0VtaLQOEalTE4bZJSA6FfM?si=FyOg-xWmRmCfBzDsyo0TTQ)
 
 Si quieres más contenido como este, suscríbete a la newsletter donde comparto herramientas, reflexiones y recursos gratis: [comosertumismo.substack.com](https://comosertumismo.substack.com/)
 
