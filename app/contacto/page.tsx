@@ -27,7 +27,7 @@ export default function ContactoPage() {
           Trabaja conmigo
         </h1>
         <p className="mt-4 text-muted">
-          Si sientes que es momento de hacer un cambio real, escríbeme.
+          Si sientes que es momento de hacer un cambio, escríbeme.
           Cuéntame un poco sobre ti y lo que estás buscando.
         </p>
 
