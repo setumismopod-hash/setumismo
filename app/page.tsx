@@ -132,12 +132,12 @@ export default function Home() {
               {recursosOpen && (
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2">
                   <div className="bg-background/95 backdrop-blur-md border border-border rounded-md py-2 min-w-[200px]">
-                    <a
-                      href="#"
+                    <Link
+                      href="/recursos/libros"
                       className="block px-4 py-2 text-xs normal-case tracking-normal text-muted transition-colors hover:text-foreground hover:bg-border/30"
                     >
                       Lista de libros
-                    </a>
+                    </Link>
                     <a
                       href="#"
                       className="block px-4 py-2 text-xs normal-case tracking-normal text-muted transition-colors hover:text-foreground hover:bg-border/30"
@@ -211,13 +211,13 @@ export default function Home() {
               <div>
                 <span className="text-foreground">Recursos</span>
                 <div className="mt-2 flex flex-col gap-2 pl-4">
-                  <a
-                    href="#"
+                  <Link
+                    href="/recursos/libros"
                     className="text-xs normal-case tracking-normal transition-colors hover:text-foreground"
                     onClick={() => setMenuOpen(false)}
                   >
                     Lista de libros
-                  </a>
+                  </Link>
                   <a
                     href="#"
                     className="text-xs normal-case tracking-normal transition-colors hover:text-foreground"
