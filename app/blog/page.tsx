@@ -11,15 +11,7 @@ export default function BlogPage() {
   const posts = getAllPosts();
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <header className="border-b border-border">
-        <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-          <Link href="/" className="text-lg font-bold tracking-tight">
-            Sé Tú Mismo
-          </Link>
-        </nav>
-      </header>
-
+    <div className="min-h-screen bg-background text-foreground pt-20">
       <main className="mx-auto max-w-3xl px-6 py-16">
         <h1 className="text-4xl font-bold tracking-tight">Blog</h1>
         <p className="mt-2 text-muted">

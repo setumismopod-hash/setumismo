@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 
 const ALL_BOOKS = [
   { title: "No eres una piedra", author: "Mark Freeman" },
@@ -71,25 +70,7 @@ export default function LibrosPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      {/* Navigation */}
-      <nav className="border-b border-border">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <Link
-            href="/"
-            className="font-[family-name:var(--font-display)] text-lg font-bold tracking-tight"
-          >
-            Sé Tú Mismo
-          </Link>
-          <Link
-            href="/"
-            className="text-xs uppercase tracking-widest text-muted transition-colors hover:text-foreground"
-          >
-            Volver
-          </Link>
-        </div>
-      </nav>
-
+    <div className="min-h-screen bg-background text-foreground pt-20">
       <main className="mx-auto max-w-2xl px-6 py-24">
         {/* Header */}
         <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl font-bold tracking-tight">
@@ -179,7 +160,7 @@ export default function LibrosPage() {
                   key={`${book.title}-${i}`}
                   className="flex items-baseline gap-3 border-b border-border pb-4"
                 >
-                  <span className="text-xs text-muted tabular-nums w-6">
+                  <span className="text-xs text-accent font-semibold tabular-nums w-6">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <span className="text-sm font-medium">{book.title}</span>
@@ -190,42 +171,6 @@ export default function LibrosPage() {
           </div>
         )}
       </main>
-
-      {/* Footer */}
-      <footer className="border-t border-border">
-        <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-6 py-12 sm:flex-row sm:justify-between">
-          <div className="flex gap-6 text-sm text-muted">
-            <a
-              href="https://www.instagram.com/comosertumismo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-colors hover:text-foreground"
-            >
-              Instagram
-            </a>
-            <a
-              href="https://www.youtube.com/@Setumismo.elpodcast"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-colors hover:text-foreground"
-            >
-              YouTube
-            </a>
-            <a
-              href="https://open.spotify.com/show/2ERQlZQycD77mt8rVM0Be5"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-colors hover:text-foreground"
-            >
-              Spotify
-            </a>
-          </div>
-          <p className="text-sm text-muted">
-            &copy; {new Date().getFullYear()} Cómo Ser Tú Mismo. Todos los
-            derechos reservados.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }

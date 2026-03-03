@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
 import type { Metadata } from "next";
 
@@ -33,21 +32,7 @@ export default async function PostPage({ params }: { params: Params }) {
   const post = await getPostBySlug(slug);
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <header className="border-b border-border">
-        <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-          <Link href="/" className="text-lg font-bold tracking-tight">
-            Sé Tú Mismo
-          </Link>
-          <Link
-            href="/blog"
-            className="text-sm text-muted transition-colors hover:text-foreground"
-          >
-            Todos los artículos
-          </Link>
-        </nav>
-      </header>
-
+    <div className="min-h-screen bg-background text-foreground pt-20">
       <article className="mx-auto max-w-3xl px-6 py-16">
         <time className="text-sm text-muted">{post.date}</time>
         <h1 className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">

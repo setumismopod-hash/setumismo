@@ -1,27 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 
 export default function ContactoPage() {
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <header className="border-b border-border">
-        <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-          <Link href="/" className="text-lg font-bold tracking-tight">
-            Sé Tú Mismo
-          </Link>
-          <Link
-            href="/"
-            className="text-sm text-muted transition-colors hover:text-foreground"
-          >
-            Volver al inicio
-          </Link>
-        </nav>
-      </header>
-
+    <div className="min-h-screen bg-background text-foreground pt-20">
       <section className="mx-auto max-w-xl px-6 py-24">
         <h1 className="font-[family-name:var(--font-display)] text-4xl font-bold tracking-tight">
           Trabaja conmigo
@@ -47,7 +32,6 @@ export default function ContactoPage() {
             }}
             className="mt-12 flex flex-col gap-6"
           >
-            {/* TODO: Reemplazar con tu access key de https://web3forms.com */}
             <input
               type="hidden"
               name="access_key"

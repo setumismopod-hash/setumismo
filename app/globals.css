@@ -7,7 +7,8 @@
   --color-muted: #666666;
   --color-border: #e5e5e5;
   --color-accent: #c8b89a;
-  --font-sans: var(--font-inter);
+  --color-surface: #f8f6f3;
+  --font-sans: var(--font-sans);
   --font-display: var(--font-display);
 }
 
@@ -20,6 +21,28 @@ body {
   background: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Section heading decorative line */
+.section-heading {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.section-heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3rem;
+  height: 2px;
+  background: var(--color-accent);
+}
+
+.section-heading-center::after {
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Prose styles (blog) */
@@ -78,7 +101,7 @@ body {
 
 .prose blockquote {
   font-style: italic;
-  border-left: 0.25rem solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
   padding-left: 1em;
   margin-top: 1.6em;
   margin-bottom: 1.6em;
@@ -126,4 +149,143 @@ body::before {
 .animate-on-scroll.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Hero staggered entrance */
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-stagger-1 {
+  opacity: 0;
+  animation: heroFadeIn 0.8s ease-out 0.2s forwards;
+}
+
+.hero-stagger-2 {
+  opacity: 0;
+  animation: heroFadeIn 0.8s ease-out 0.5s forwards;
+}
+
+.hero-stagger-3 {
+  opacity: 0;
+  animation: heroFadeIn 0.8s ease-out 0.8s forwards;
+}
+
+/* Scroll indicator bounce */
+@keyframes scrollBounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+}
+
+.scroll-indicator {
+  animation: scrollBounce 2s ease-in-out infinite;
+}
+
+/* Episode card hover */
+.episode-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.episode-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Platform button hover fill */
+.platform-btn {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.platform-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-foreground);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.platform-btn:hover::before {
+  transform: scaleX(1);
+}
+
+.platform-btn:hover {
+  color: var(--color-background);
+  border-color: var(--color-foreground);
+}
+
+/* Nav link animated underline */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Newsletter form transition */
+.newsletter-success-enter {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* View Transitions */
+@keyframes viewFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes viewFadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+::view-transition-old(root) {
+  animation: viewFadeOut 0.2s ease-out forwards;
+}
+
+::view-transition-new(root) {
+  animation: viewFadeIn 0.3s ease-out forwards;
 }
