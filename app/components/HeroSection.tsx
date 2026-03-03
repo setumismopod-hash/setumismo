@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const heroVideos = ["/hero-1.mp4", "/hero-2.mp4"];
+const heroVideos = ["/hero-1.mp4", "/hero-2.mp4", "/hero-7.mp4"];
 
 export default function HeroSection() {
   const [currentVideo, setCurrentVideo] = useState(0);
