@@ -34,7 +34,13 @@ export default async function PostPage({ params }: { params: Params }) {
   return (
     <div className="min-h-screen bg-background text-foreground pt-20">
       <article className="mx-auto max-w-3xl px-6 py-16">
-        <time className="text-sm text-muted">{post.date}</time>
+        <time className="text-sm text-muted">
+          {new Date(post.date + "T12:00:00").toLocaleDateString("es-ES", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+          })}
+        </time>
         <h1 className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">
           {post.title}
         </h1>

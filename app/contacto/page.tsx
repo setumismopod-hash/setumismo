@@ -48,7 +48,7 @@ export default function ContactoPage() {
                 id="name"
                 name="name"
                 required
-                className="mt-2 w-full border border-border bg-transparent px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted focus:border-foreground"
+                className="mt-2 w-full rounded-lg border border-border bg-transparent px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted focus:border-foreground"
                 placeholder="Tu nombre"
               />
             </div>
@@ -62,7 +62,7 @@ export default function ContactoPage() {
                 id="email"
                 name="email"
                 required
-                className="mt-2 w-full border border-border bg-transparent px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted focus:border-foreground"
+                className="mt-2 w-full rounded-lg border border-border bg-transparent px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted focus:border-foreground"
                 placeholder="tu@email.com"
               />
             </div>
@@ -76,7 +76,7 @@ export default function ContactoPage() {
                 name="message"
                 required
                 rows={5}
-                className="mt-2 w-full border border-border bg-transparent px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted focus:border-foreground resize-none"
+                className="mt-2 w-full rounded-lg border border-border bg-transparent px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted focus:border-foreground resize-none"
                 placeholder="Cuéntame qué estás buscando..."
               />
             </div>

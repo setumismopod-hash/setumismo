@@ -13,7 +13,7 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen bg-background text-foreground pt-20">
       <main className="mx-auto max-w-3xl px-6 py-16">
-        <h1 className="text-4xl font-bold tracking-tight">Blog</h1>
+        <h1 className="font-[family-name:var(--font-display)] text-4xl font-bold tracking-tight section-heading">Blog</h1>
         <p className="mt-2 text-muted">
           Reflexiones sobre autenticidad y crecimiento personal.
         </p>
@@ -25,7 +25,13 @@ export default function BlogPage() {
               href={`/blog/${post.slug}`}
               className="group block border-b border-border pb-8 last:border-0"
             >
-              <time className="text-sm text-muted">{post.date}</time>
+              <time className="text-sm text-muted">
+                {new Date(post.date + "T12:00:00").toLocaleDateString("es-ES", {
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                })}
+              </time>
               <h2 className="mt-1 text-2xl font-semibold tracking-tight group-hover:underline">
                 {post.title}
               </h2>

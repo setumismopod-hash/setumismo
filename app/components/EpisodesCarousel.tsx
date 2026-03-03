@@ -66,38 +66,37 @@ export default function EpisodesCarousel() {
           Capítulos
         </h2>
       </div>
-      <div className="mt-10 overflow-hidden">
-        <div className="mx-auto max-w-6xl px-6">
-          <div
-            ref={sliderRef}
-            onMouseDown={handleMouseDown}
-            onMouseMove={handleMouseMove}
-            onMouseUp={handleMouseUp}
-            onMouseLeave={handleMouseUp}
-            className="flex gap-6 overflow-x-scroll pb-4 scrollbar-hide snap-x snap-mandatory -mr-6 cursor-grab select-none"
-          >
-            {episodes.map((episode) => (
-              <a
-                key={episode.ep}
-                href={episode.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="episode-card group flex-none w-72 border border-border p-4 hover:border-foreground snap-start"
-              >
-                <div className="aspect-video bg-border/30 flex items-center justify-center">
-                  <img
-                    src={episode.cover}
-                    alt={episode.title}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <span className="mt-3 block text-xs text-muted">{episode.ep}</span>
-                <h3 className="mt-1 text-sm font-semibold group-hover:text-accent transition-colors">
-                  {episode.title}
-                </h3>
-              </a>
-            ))}
-          </div>
+      <div className="mt-10 mx-auto max-w-6xl px-6">
+        {/* Desktop: grid — Mobile: horizontal scroll */}
+        <div
+          ref={sliderRef}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
+          className="grid grid-cols-2 gap-6 md:grid-cols-4 max-md:flex max-md:overflow-x-scroll max-md:pb-4 max-md:custom-scrollbar max-md:snap-x max-md:snap-mandatory max-md:cursor-grab max-md:select-none"
+        >
+          {episodes.map((episode) => (
+            <a
+              key={episode.ep}
+              href={episode.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="episode-card group rounded-xl border border-border p-4 hover:border-foreground max-md:flex-none max-md:w-72 max-md:snap-start"
+            >
+              <div className="aspect-video bg-border/30 rounded-lg overflow-hidden flex items-center justify-center">
+                <img
+                  src={episode.cover}
+                  alt={episode.title}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <span className="mt-3 block text-xs text-muted">{episode.ep}</span>
+              <h3 className="mt-1 text-sm font-semibold group-hover:text-accent transition-colors">
+                {episode.title}
+              </h3>
+            </a>
+          ))}
         </div>
       </div>
     </section>

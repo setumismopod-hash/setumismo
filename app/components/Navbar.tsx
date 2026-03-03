@@ -34,13 +34,13 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-6xl items-center justify-center px-6 py-4">
         {/* Desktop nav */}
         <div className="hidden md:flex gap-8 text-xs uppercase tracking-widest text-muted">
-          <Link href="/" className="nav-link transition-colors hover:text-accent">
+          <Link href="/" className={`nav-link transition-colors hover:text-accent ${pathname === "/" ? "text-foreground" : ""}`}>
             Home
           </Link>
           <Link href="/#podcast" className="nav-link transition-colors hover:text-accent">
             Podcast
           </Link>
-          <Link href="/blog" className="nav-link transition-colors hover:text-accent">
+          <Link href="/blog" className={`nav-link transition-colors hover:text-accent ${pathname.startsWith("/blog") ? "text-foreground" : ""}`}>
             Blog
           </Link>
           <div
@@ -48,7 +48,7 @@ export default function Navbar() {
             onMouseEnter={() => setRecursosOpen(true)}
             onMouseLeave={() => setRecursosOpen(false)}
           >
-            <button className="nav-link transition-colors hover:text-accent uppercase tracking-widest text-xs">
+            <button className={`nav-link transition-colors hover:text-accent uppercase tracking-widest text-xs ${pathname.startsWith("/recursos") ? "text-foreground" : ""}`}>
               Recursos
             </button>
             {recursosOpen && (
@@ -76,7 +76,7 @@ export default function Navbar() {
               </div>
             )}
           </div>
-          <Link href="/contacto" className="nav-link transition-colors hover:text-accent">
+          <Link href="/contacto" className={`nav-link transition-colors hover:text-accent ${pathname === "/contacto" ? "text-foreground" : ""}`}>
             Contacto
           </Link>
         </div>
