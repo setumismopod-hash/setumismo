@@ -90,7 +90,7 @@ export default function LibrosPage() {
         {!subscribed && (
           <>
             {/* Newsletter form */}
-            <div className="mt-12 border border-border p-8">
+            <div className="mt-12 rounded-xl border border-border p-8">
               <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold tracking-tight">
                 Accede a la lista completa
               </h2>
@@ -107,7 +107,7 @@ export default function LibrosPage() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="tu@email.com"
                   required
-                  className="flex-1 border border-border bg-transparent px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted focus:border-foreground"
+                  className="flex-1 rounded-xl border border-border bg-transparent px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted focus:border-foreground"
                 />
                 <button
                   type="submit"
@@ -124,7 +124,7 @@ export default function LibrosPage() {
         {/* Full list (after subscription) */}
         {subscribed && (
           <div className="mt-12">
-            <div className="mb-8 border border-accent/50 bg-accent/5 p-6">
+            <div className="mb-8 rounded-xl border border-accent/50 bg-accent/5 p-6">
               <p className="text-sm font-medium">
                 Gracias por suscribirte. Aquí tienes la lista completa.
               </p>
