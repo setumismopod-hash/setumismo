@@ -10,6 +10,7 @@
   --color-surface: #f8f6f3;
   --font-sans: var(--font-sans);
   --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
 }
 
 html {
@@ -149,6 +150,12 @@ body::before {
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: var(--color-muted);
+}
+
+/* Floating icon animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(3deg); }
 }
 
 /* Scroll animations */

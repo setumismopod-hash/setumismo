@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { DM_Sans, Syne } from "next/font/google";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import { DM_Sans, DM_Mono, Syne } from "next/font/google";
+import LayoutShell from "./components/LayoutShell";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -12,6 +11,12 @@ const dmSans = DM_Sans({
 const syne = Syne({
   variable: "--font-display",
   subsets: ["latin"],
+});
+
+const dmMono = DM_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
 });
 
 export const metadata: Metadata = {
@@ -27,10 +32,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${dmSans.variable} ${syne.variable} antialiased`}>
-        <Navbar />
-        {children}
-        <Footer />
+      <body className={`${dmSans.variable} ${syne.variable} ${dmMono.variable} antialiased`}>
+        <LayoutShell>{children}</LayoutShell>
       </body>
     </html>
   );
