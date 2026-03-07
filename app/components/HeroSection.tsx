@@ -64,7 +64,7 @@ export default function HeroSection() {
 
       {/* Hero content */}
       <div className="relative z-10 text-left px-6 sm:px-16 text-white max-w-6xl w-full">
-        <h1 className="hero-stagger-1 font-[family-name:var(--font-display)] text-6xl sm:text-7xl md:text-8xl font-bold tracking-tight uppercase">
+        <h1 className="hero-stagger-1 font-[family-name:var(--font-display)] text-6xl sm:text-7xl md:text-8xl font-extrabold tracking-tight uppercase">
           Sé Tú Mismo
         </h1>
         <p className="hero-stagger-2 mt-6 max-w-lg text-lg text-white/70">
@@ -83,7 +83,7 @@ export default function HeroSection() {
 
       {/* Credit */}
       <span className="absolute bottom-8 right-16 text-sm italic text-white/70 z-10">
-        con Gaxpar
+        con Gaxpar Uriarte
       </span>
 
       {/* Scroll indicator */}
