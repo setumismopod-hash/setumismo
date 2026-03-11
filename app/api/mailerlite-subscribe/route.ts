@@ -1,17 +1,27 @@
 import { NextResponse } from "next/server";
 
 const MAILERLITE_API_KEY = process.env.MAILERLITE_API_KEY ?? "";
-const MAILERLITE_GROUP_ID = "181219912219362737";
+
+const GROUPS = {
+  default: "181219912219362737",        // Coaching Sorteo
+  calientes: "181387617375356278",       // Coaching - Leads Calientes
+  tibios: "181387623226410211",          // Coaching - Leads Tibios
+} as const;
 
 export async function POST(req: Request) {
   try {
-    const { email, name, lastName } = await req.json();
+    const { email, name, lastName, group } = await req.json();
 
     if (!email) {
       return NextResponse.json({ error: "Email required" }, { status: 400 });
     }
 
-    // Suscribir al grupo "Coaching Sorteo"
+    const groupId = group === "calientes"
+      ? GROUPS.calientes
+      : group === "tibios"
+        ? GROUPS.tibios
+        : GROUPS.default;
+
     const res = await fetch("https://connect.mailerlite.com/api/subscribers", {
       method: "POST",
       headers: {
@@ -24,7 +34,7 @@ export async function POST(req: Request) {
           name: name || "",
           last_name: lastName || "",
         },
-        groups: [MAILERLITE_GROUP_ID],
+        groups: [groupId],
       }),
     });
 

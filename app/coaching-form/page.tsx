@@ -259,8 +259,8 @@ const WEB3FORMS_KEY = "0750786b-5250-4235-9362-e8e7f069e01c";
 
 const STEPS = ["Inicio", "Datos", "Situacion", "Compromiso", "Confirmar"];
 
-// TODO: Reemplazar con URL real del PDF cuando esté listo
-const PDF_URL = "#";
+const PDF_PREGUNTAS_URL = "/downloads/preguntas-precoaching.pdf";
+const OSAR_PAGE_URL = "/recursos/modelo-osar";
 // TODO: Reemplazar con URL real del episodio
 const PODCAST_URL = "https://open.spotify.com/show/2ERQlZQycD77mt8rVM0Be5";
 
@@ -353,8 +353,9 @@ export default function CoachingFormPage() {
         return;
       }
 
-      // MailerLite — suscribir con tag
+      // MailerLite — suscribir al grupo según nivel de compromiso
       try {
+        const mlGroup = (form.compromiso ?? 5) >= 8 ? "calientes" : "tibios";
         await fetch("/api/mailerlite-subscribe", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -362,6 +363,7 @@ export default function CoachingFormPage() {
             email: form.email,
             name: form.nombre,
             lastName: form.apellido,
+            group: mlGroup,
           }),
         });
       } catch {
@@ -397,29 +399,52 @@ export default function CoachingFormPage() {
 
           <HandDrawnLine className="w-[200px] mx-auto my-8" />
 
-          {/* Recurso */}
-          <div className="rounded-xl border border-border p-8 text-left mb-8">
-            <p className="font-[family-name:var(--font-mono)] text-[10px] uppercase tracking-[0.2em] text-muted mb-3">
-              Recurso para ti
-            </p>
-            <h3 className="font-[family-name:var(--font-display)] text-lg font-medium mb-2">
-              5 preguntas para conocerte antes de tu primera sesion
-            </h3>
-            <p className="text-sm text-muted leading-relaxed mb-6">
-              Un ejercicio breve para seguir con la auto-observacion que empezaste en este formulario. Funciona con o sin coach.
-            </p>
-            <a
-              href={PDF_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-opacity hover:opacity-80"
-            >
-              Descargar PDF
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-            </a>
-          </div>
+          {/* Recurso — diferenciado por nivel de compromiso */}
+          {(form.compromiso ?? 5) >= 8 ? (
+            <div className="rounded-xl border border-border p-8 text-left mb-8">
+              <p className="font-[family-name:var(--font-mono)] text-[10px] uppercase tracking-[0.2em] text-muted mb-3">
+                Recurso para ti
+              </p>
+              <h3 className="font-[family-name:var(--font-display)] text-lg font-medium mb-2">
+                5 preguntas para conocerte antes de tu primera sesion
+              </h3>
+              <p className="text-sm text-muted leading-relaxed mb-6">
+                Un ejercicio breve para seguir con la auto-observacion que empezaste en este formulario. Funciona con o sin coach.
+              </p>
+              <a
+                href={PDF_PREGUNTAS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-opacity hover:opacity-80"
+              >
+                Descargar PDF
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </a>
+            </div>
+          ) : (
+            <div className="rounded-xl border border-border p-8 text-left mb-8">
+              <p className="font-[family-name:var(--font-mono)] text-[10px] uppercase tracking-[0.2em] text-muted mb-3">
+                Recurso para ti
+              </p>
+              <h3 className="font-[family-name:var(--font-display)] text-lg font-medium mb-2">
+                La estructura detras de tus patrones
+              </h3>
+              <p className="text-sm text-muted leading-relaxed mb-6">
+                Entende por que haces lo que haces y por que cambiar de accion no siempre alcanza. Un modelo simple para ver lo que no estas viendo.
+              </p>
+              <a
+                href={OSAR_PAGE_URL}
+                className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-opacity hover:opacity-80"
+              >
+                Leer recurso
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+            </div>
+          )}
 
           <p className="font-[family-name:var(--font-mono)] text-[11px] text-muted/50 tracking-[0.1em]">
             Como Ser Tu Mismo · Coaching Ontologico

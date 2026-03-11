@@ -23,12 +23,14 @@ export default function AboutSection() {
             <p className="mt-4 text-muted leading-relaxed">
               A eso me dedico: acompañar a personas a cambiar la forma en que perciben y crean su realidad para que puedan vivir una vida alineada con quienes realmente son. A través de Sé Tú Mismo, el coaching y el contenido que creo, busco abrir espacios de conversación profundos que inspiren a mirarnos con otros ojos y vivir desde un lugar más honesto con quienes somos.
             </p>
-            <Link
-              href="/contacto"
+            <a
+              href="https://cal.com/gaxpar-uriarte-3nwoir/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-8 inline-block rounded-full bg-accent px-8 py-3 text-sm font-medium text-background transition-opacity hover:opacity-80"
             >
               Trabaja conmigo
-            </Link>
+            </a>
           </div>
         </div>
       </div>

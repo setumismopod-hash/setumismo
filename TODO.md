@@ -5,7 +5,7 @@
 - [x] **Descripción del podcast** — Escribir la descripción real en la sección Podcast
 - [x] **Bio de Gaxpar** — Reemplazar los dos párrafos placeholder en la sección "Sobre Gaxpar"
 - [x] **Foto de Gaxpar** — Subir foto real y reemplazar el placeholder en la sección "Sobre Gaxpar"
-- [ ] **Capítulos del podcast** — Reemplazar los 4 episodios placeholder con episodios reales (títulos, miniaturas, links)
+- [x] **Capítulos del podcast** — Reemplazar los 4 episodios placeholder con episodios reales (títulos, miniaturas, links)
 - [ ] **SVG overlay de dibujos a mano** — Crear o quitar el overlay decorativo planeado para el hero
 - [x] **Imagen del hero** — Reemplazado con slideshow de 6 videos propios (3s cada uno)
 
