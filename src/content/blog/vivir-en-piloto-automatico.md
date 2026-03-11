@@ -3,6 +3,7 @@ title: "Vivir en piloto automático: cuando tu vida está bien pero algo no enca
 date: "2026-02-27"
 excerpt: Tu vida funciona, pero algo no encaja. Vivir en piloto automático es la enfermedad silenciosa que nubla tu propósito. Descubre cómo salir.
 slug: vivir-en-piloto-automatico
+spotifyUrl: https://open.spotify.com/episode/0odc93E35AMeqlEWwnjspa?si=DxDYlRAXTwezDQ3_hOlusQ
 ---
 Tienes trabajo. Tienes salud. Tienes gente que te quiere. Y aun así, algo no encaja. No sabes qué es, no puedes explicarlo, pero lo sientes. Como si estuvieras usando una ropa que no es tuya y nadie más lo nota.
 
@@ -54,8 +55,3 @@ No busques respuestas correctas. Este ejercicio no es para resolver nada. Es par
 
 La solución al piloto automático no es un plan de 5 pasos ni una revelación mística. Es cuestionarlo. Preguntarte si lo que haces sigue siendo tuyo o si solo estás repitiendo un programa que escribiste hace tiempo y que ya no te representa.
 
-Escucha el episodio completo acá: [Ep. 130 en Spotify](https://open.spotify.com/episode/0odc93E35AMeqlEWwnjspa?si=DxDYlRAXTwezDQ3_hOlusQ)
-
-Si quieres más contenido como este, suscríbete y accede a libros y recursos gratis: [Recursos](https://www.comosertumismo.com/recursos/libros)
-
-Síguenos en Instagram: [comosertumismo](https://www.instagram.com/comosertumismo)

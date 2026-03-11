@@ -11,6 +11,7 @@ export interface Post {
   title: string;
   date: string;
   excerpt: string;
+  spotifyUrl?: string;
   content?: string;
 }
 
@@ -28,6 +29,7 @@ export function getAllPosts(): Post[] {
         title: data.title,
         date: String(data.date),
         excerpt: data.excerpt,
+        spotifyUrl: data.spotifyUrl,
       };
     });
 
@@ -38,7 +40,7 @@ export function getAllPosts(): Post[] {
 
 export async function getPostBySlug(
   slug: string
-): Promise<Post & { content: string }> {
+): Promise<Post & { content: string; spotifyUrl?: string }> {
   const filePath = path.join(postsDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(fileContents);
@@ -57,6 +59,7 @@ export async function getPostBySlug(
     title: data.title,
     date: String(data.date),
     excerpt: data.excerpt,
+    spotifyUrl: data.spotifyUrl,
     content: htmlContent,
   };
 }

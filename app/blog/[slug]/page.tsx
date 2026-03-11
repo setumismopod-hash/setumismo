@@ -1,4 +1,5 @@
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
+import PodcastBanner from "@/app/components/PodcastBanner";
 import type { Metadata } from "next";
 
 type Params = Promise<{ slug: string }>;
@@ -27,9 +28,37 @@ export async function generateMetadata({
   };
 }
 
+function injectBanner(html: string, banner: React.ReactNode) {
+  // Split after the 2nd <h2> heading
+  const h2Regex = /<h2[\s>]/g;
+  let match;
+  let count = 0;
+  let splitIndex = -1;
+
+  while ((match = h2Regex.exec(html)) !== null) {
+    count++;
+    if (count === 2) {
+      splitIndex = match.index;
+      break;
+    }
+  }
+
+  if (splitIndex === -1) return { before: html, after: "" };
+
+  return {
+    before: html.slice(0, splitIndex),
+    after: html.slice(splitIndex),
+  };
+}
+
 export default async function PostPage({ params }: { params: Params }) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
+
+  const hasBanner = !!post.spotifyUrl;
+  const { before, after } = hasBanner
+    ? injectBanner(post.content, null)
+    : { before: post.content, after: "" };
 
   return (
     <div className="min-h-screen bg-background text-foreground pt-20">
@@ -44,10 +73,11 @@ export default async function PostPage({ params }: { params: Params }) {
         <h1 className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">
           {post.title}
         </h1>
-        <div
-          className="prose prose-neutral mt-12 max-w-none"
-          dangerouslySetInnerHTML={{ __html: post.content }}
-        />
+        <div className="prose prose-neutral mt-12 max-w-none">
+          <div dangerouslySetInnerHTML={{ __html: before }} />
+          {hasBanner && <PodcastBanner spotifyUrl={post.spotifyUrl!} />}
+          {after && <div dangerouslySetInnerHTML={{ __html: after }} />}
+        </div>
       </article>
     </div>
   );

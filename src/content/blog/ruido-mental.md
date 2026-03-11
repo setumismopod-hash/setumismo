@@ -3,6 +3,7 @@ title: "Ruido mental: por qué tu mente no para y cómo encontrar silencio"
 date: "2026-02-16"
 excerpt: ¿Tu mente no para? El ruido mental es la fricción entre lo que quieres y lo que es. Descubre de dónde viene y cómo silenciarlo con prácticas simples.
 slug: ruido-mental
+spotifyUrl: https://open.spotify.com/episode/749EK9MEZR3yWQKz7ziCX8?si=fSbDlYNuQFq0HFuQ1CcxPg
 ---
 El ruido mental es esa voz que no se calla. La que repite una y otra vez lo que debería haber pasado, lo que podría salir mal, lo que no estás haciendo bien. Y cuanto más intentas callarla, más fuerte habla.
 
@@ -62,8 +63,3 @@ Los cambios no suceden de un día para otro. Requieren tiempo, paciencia, y lo q
 
 Pero puedes empezar por algo pequeño: dejar de pelear con lo que sientes. Cuando aceptas lo que hay, el ruido empieza a bajar. No porque desaparezca, sino porque ya no tiene contra qué friccionar.
 
-Escucha el episodio completo acá: [CLICK AQUÍ](https://open.spotify.com/episode/749EK9MEZR3yWQKz7ziCX8?si=fSbDlYNuQFq0HFuQ1CcxPg)
-
-Si quieres más contenido como este, suscríbete a la newsletter: 
-[CLICK AQUÍ](subscribepage.io/WK69Xg)
-Síguenos en Instagram: www.instragram.com/comosertumismo

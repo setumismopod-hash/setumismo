@@ -3,6 +3,7 @@ title: "Cómo dejar de pensar tanto: lo que tu mente esconde cuando no para"
 date: "2026-02-24"
 excerpt: "¿No puedes dejar de pensar tanto? El sobrepensamiento no es un defecto, es una estrategia de evasión. Descubre qué emoción esconde tu mente y cómo reconectarte."
 slug: "sobrepensamiento"
+spotifyUrl: https://open.spotify.com/episode/0VtaLQOEalTE4bZJSA6FfM?si=FyOg-xWmRmCfBzDsyo0TTQ
 ---
 
 Llevas horas dándole vueltas a lo mismo. Sabes que no te lleva a ningún lado, pero tu cabeza no frena. Y lo peor: sientes culpa por no poder parar, lo que te hace pensar todavía más. Si buscaste "cómo dejar de pensar tanto", probablemente no necesitas otro consejo de respiración. Necesitas entender por qué tu mente decidió que pensar sin parar era mejor opción que sentir.
@@ -69,10 +70,3 @@ La tercera: sal sin audífonos. Camina. Mira lo que hay alrededor. Tu mente va a
 
 Tu cerebro no es tu enemigo. Pero tampoco es el único lugar donde vives. Pensar de más no se resuelve pensando mejor. Se resuelve cuando entiendes que la mente estaba llenando un espacio que le correspondía a otra cosa.
 
-Escucha el episodio completo acá: [Episodio 129 en Spotify](https://open.spotify.com/episode/0VtaLQOEalTE4bZJSA6FfM?si=FyOg-xWmRmCfBzDsyo0TTQ)
-
-Si quieres más contenido como este, suscríbete a la newsletter donde comparto herramientas, reflexiones y recursos gratis: [comosertumismo.substack.com](https://comosertumismo.substack.com/)
-
-Sígueme en Instagram: [@comosertumismo](https://www.instagram.com/comosertumismo)
-
-*Gaxpar Uriarte*
