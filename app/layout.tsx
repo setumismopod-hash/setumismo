@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans, DM_Mono, Syne } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import LayoutShell from "./components/LayoutShell";
 import "./globals.css";
 
@@ -34,6 +35,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={`${dmSans.variable} ${syne.variable} ${dmMono.variable} antialiased`}>
         <LayoutShell>{children}</LayoutShell>
+        <Analytics />
       </body>
     </html>
   );
