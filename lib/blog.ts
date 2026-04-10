@@ -41,7 +41,20 @@ export function getAllPosts(): Post[] {
 export async function getPostBySlug(
   slug: string
 ): Promise<Post & { content: string; spotifyUrl?: string }> {
-  const filePath = path.join(postsDirectory, `${slug}.md`);
+  // Find the file that contains this slug — either by filename or frontmatter slug
+  const fileNames = fs.readdirSync(postsDirectory).filter((name) => name.endsWith(".md"));
+  let filePath = path.join(postsDirectory, `${slug}.md`);
+
+  if (!fs.existsSync(filePath)) {
+    const match = fileNames.find((fileName) => {
+      const raw = fs.readFileSync(path.join(postsDirectory, fileName), "utf8");
+      const { data } = matter(raw);
+      return data.slug === slug;
+    });
+    if (!match) throw new Error(`Post not found: ${slug}`);
+    filePath = path.join(postsDirectory, match);
+  }
+
   const fileContents = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(fileContents);
 
