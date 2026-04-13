@@ -1,35 +1,10 @@
 "use client";
 
 import { useRef, useCallback } from "react";
+import Link from "next/link";
+import type { Post } from "@/lib/blog";
 
-const episodes = [
-  {
-    title: "Tus hábitos no cambian porque no quieres dejar de ser tú",
-    ep: "Ep. 127",
-    url: "https://open.spotify.com/episode/0RvdZxwCiDvXkz7qjvEXQ0?si=SsqpC9u4QPWI5vz52si6dQ",
-    cover: "/ep-127.jpg",
-  },
-  {
-    title: "Respira y sigue: el arte de no engancharte con la mente",
-    ep: "Ep. 114",
-    url: "https://open.spotify.com/episode/6CijSIiPhsJlw9tRp2OBpa?si=VRHvClu-RfKFzvji8MBdlw",
-    cover: "/ep-114.jpg",
-  },
-  {
-    title: "El poder de actuar diferente (aunque incomode)",
-    ep: "Ep. 109",
-    url: "https://open.spotify.com/episode/6qRWddbPh8rAbESg91YNN5?si=pC6b72QORL60x5ICHIyiQg",
-    cover: "/ep-109.jpg",
-  },
-  {
-    title: "Cómo encontrarte a ti mismo en el caos",
-    ep: "Ep. 52",
-    url: "https://open.spotify.com/episode/2KAsCTXaJHf6QK8o1GpqK4?si=YuoGQvqBRWuAs-Jf437P3Q",
-    cover: "/ep-52.jpg",
-  },
-];
-
-export default function EpisodesCarousel() {
+export default function EpisodesCarousel({ episodes }: { episodes: Post[] }) {
   const sliderRef = useRef<HTMLDivElement>(null);
   const isDragging = useRef(false);
   const startX = useRef(0);
@@ -59,15 +34,27 @@ export default function EpisodesCarousel() {
     if (sliderRef.current) sliderRef.current.style.cursor = "grab";
   }, []);
 
+  if (episodes.length === 0) return null;
+
   return (
     <section className="bg-background text-foreground py-24 animate-on-scroll">
-      <div className="mx-auto max-w-6xl px-6">
-        <h2 className="font-[family-name:var(--font-display)] text-4xl font-bold tracking-tight section-heading">
-          Capítulos
-        </h2>
+      <div className="mx-auto max-w-6xl px-6 flex items-end justify-between gap-6">
+        <div>
+          <h2 className="font-[family-name:var(--font-display)] text-4xl font-bold tracking-tight section-heading">
+            Blog
+          </h2>
+          <p className="mt-3 text-sm text-muted">
+            La versión escrita de cada episodio.
+          </p>
+        </div>
+        <Link
+          href="/blog"
+          className="hidden sm:inline-block text-xs uppercase tracking-widest text-muted transition-colors hover:text-foreground whitespace-nowrap"
+        >
+          Ver todos →
+        </Link>
       </div>
       <div className="mt-10 mx-auto max-w-6xl px-6">
-        {/* Desktop: grid — Mobile: horizontal scroll */}
         <div
           ref={sliderRef}
           onMouseDown={handleMouseDown}
@@ -77,25 +64,24 @@ export default function EpisodesCarousel() {
           className="grid grid-cols-2 gap-6 md:grid-cols-4 max-md:flex max-md:overflow-x-scroll max-md:pb-4 max-md:custom-scrollbar max-md:snap-x max-md:snap-mandatory max-md:cursor-grab max-md:select-none"
         >
           {episodes.map((episode) => (
-            <a
-              key={episode.ep}
-              href={episode.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="episode-card group rounded-xl border border-border p-4 hover:border-foreground max-md:flex-none max-md:w-72 max-md:snap-start"
+            <Link
+              key={episode.slug}
+              href={`/blog/${episode.slug}`}
+              className="episode-card group flex flex-col rounded-xl border border-border p-6 hover:border-foreground max-md:flex-none max-md:w-72 max-md:snap-start"
             >
-              <div className="aspect-video bg-border/30 rounded-lg overflow-hidden flex items-center justify-center">
-                <img
-                  src={episode.cover}
-                  alt={episode.title}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-              <span className="mt-3 block text-xs text-muted">{episode.ep}</span>
-              <h3 className="mt-1 text-sm font-semibold group-hover:text-accent transition-colors">
+              <span className="font-[family-name:var(--font-mono)] text-[10px] uppercase tracking-[0.2em] text-accent">
+                Ep. {episode.episodeNumber}
+              </span>
+              <h3 className="mt-4 font-[family-name:var(--font-display)] text-lg font-semibold leading-snug line-clamp-3 group-hover:text-accent transition-colors">
                 {episode.title}
               </h3>
-            </a>
+              <p className="mt-3 text-sm text-muted leading-relaxed line-clamp-2 flex-1">
+                {episode.excerpt}
+              </p>
+              <span className="mt-6 text-[11px] uppercase tracking-widest text-muted group-hover:text-foreground transition-colors">
+                Leer →
+              </span>
+            </Link>
           ))}
         </div>
       </div>

@@ -49,20 +49,15 @@ export default function LibrosPage() {
     setSubmitting(true);
 
     try {
-      const form = e.target as HTMLFormElement;
-      const formData = new FormData(form);
-
-      await fetch(
-        "https://assets.mailerlite.com/jsonp/1149338/forms/135498912498498498/subscribe",
-        {
-          method: "POST",
-          body: formData,
-          mode: "no-cors",
-        }
-      );
-
+      const res = await fetch("/api/mailerlite-subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      if (!res.ok) throw new Error("subscribe failed");
       setSubscribed(true);
     } catch {
+      // Show the list anyway so the user isn't blocked from the resource
       setSubscribed(true);
     } finally {
       setSubmitting(false);
@@ -102,7 +97,7 @@ export default function LibrosPage() {
               <form onSubmit={handleSubmit} className="mt-6 flex gap-3">
                 <input
                   type="email"
-                  name="fields[email]"
+                  name="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="tu@email.com"

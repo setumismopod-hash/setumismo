@@ -3,6 +3,7 @@ title: "Autoconocimiento: cómo soltar lo que no te pertenece y reconectarte con
 date: "2026-03-20"
 excerpt: "El autoconocimiento empieza por soltar máscaras y creencias que no son tuyas. Aprende a reconectarte con tu esencia y dejar de vivir en piloto automático."
 slug: "autoconocimiento-soltar-lo-que-no-te-pertenece"
+episodeNumber: 133
 spotifyUrl: https://open.spotify.com/episode/4klfFA5afiwSpzJEmgwxE3?si=jlC8eKSaRr6fNQnziNRxMg
 ---
 

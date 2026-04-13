@@ -89,7 +89,7 @@ export default function PreguntasCoachingPage() {
             </svg>
           </a>
           <a
-            href="https://cal.com/gaxpar-uriarte-3nwoir/30min"
+            href="https://calendly.com/gaxpar"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface"

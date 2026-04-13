@@ -53,31 +53,31 @@ export default function Navbar() {
             </button>
             {recursosOpen && (
               <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2">
-                <div className="bg-background/95 backdrop-blur-md border border-border rounded-md py-2 min-w-[200px]">
+                <div className="bg-background/95 backdrop-blur-md border border-border rounded-md py-2 min-w-[220px]">
                   <Link
                     href="/recursos/libros"
                     className="block px-4 py-2 text-xs normal-case tracking-normal text-muted transition-colors hover:text-foreground hover:bg-border/30"
                   >
                     Lista de libros
                   </Link>
-                  <a
-                    href="#"
+                  <Link
+                    href="/recursos/modelo-osar"
                     className="block px-4 py-2 text-xs normal-case tracking-normal text-muted transition-colors hover:text-foreground hover:bg-border/30"
                   >
-                    Guía de hábitos
-                  </a>
-                  <a
-                    href="#"
+                    Modelo OSAR
+                  </Link>
+                  <Link
+                    href="/recursos/preguntas-coaching"
                     className="block px-4 py-2 text-xs normal-case tracking-normal text-muted transition-colors hover:text-foreground hover:bg-border/30"
                   >
-                    Prompts autoconocimiento
-                  </a>
+                    Preguntas de coaching
+                  </Link>
                 </div>
               </div>
             )}
           </div>
-          <Link href="/contacto" className={`nav-link transition-colors hover:text-accent ${pathname === "/contacto" ? "text-foreground" : ""}`}>
-            Contacto
+          <Link href="/coaching" className={`nav-link transition-colors hover:text-accent ${pathname.startsWith("/coaching") ? "text-foreground" : ""}`}>
+            Coaching
           </Link>
         </div>
 
@@ -157,11 +157,11 @@ export default function Navbar() {
               </div>
             </div>
             <Link
-              href="/contacto"
+              href="/coaching"
               className="transition-colors hover:text-foreground"
               onClick={() => setMenuOpen(false)}
             >
-              Contacto
+              Coaching
             </Link>
           </div>
         </div>

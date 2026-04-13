@@ -3,6 +3,7 @@ title: "Cómo dejar de fingir ser alguien que no eres (y soltar el peso que nadi
 date: "2026-03-27"
 excerpt: "Dejar de fingir ser alguien que no eres empieza por ver la máscara que te pusiste sin darte cuenta. Descubre cómo soltar ese peso."
 slug: "como-dejar-de-fingir-ser-alguien-que-no-eres"
+episodeNumber: 134
 spotifyUrl: https://open.spotify.com/episode/7jC17QspvFfq8s8LjoGegK?si=4CesQZdZTKWO_VVgN2CX1g
 ---
 

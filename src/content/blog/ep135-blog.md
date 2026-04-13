@@ -3,6 +3,7 @@ title: "Autoconocimiento y multidimensionalidad: eres mucho más de lo que crees
 date: "2026-04-02"
 excerpt: "Tu ego te muestra solo una fracción de quien eres. Descubre cómo el autoconocimiento de tu multidimensionalidad te ayuda a soltar el control y tomar decisiones propias."
 slug: "autoconocimiento-multidimensionalidad-eres-mas-de-lo-que-crees"
+episodeNumber: 135
 spotifyUrl: https://open.spotify.com/episode/5c35gTqB6ybblitoPe3im7?si=h4K9SRUfQNa5thkHKw3hAg
 ---
 

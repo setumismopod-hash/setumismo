@@ -12,6 +12,8 @@ export interface Post {
   date: string;
   excerpt: string;
   spotifyUrl?: string;
+  episodeNumber?: number;
+  cover?: string;
   content?: string;
 }
 
@@ -30,12 +32,21 @@ export function getAllPosts(): Post[] {
         date: String(data.date),
         excerpt: data.excerpt,
         spotifyUrl: data.spotifyUrl,
+        episodeNumber: data.episodeNumber,
+        cover: data.cover,
       };
     });
 
   return posts.sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
+}
+
+export function getLatestEpisodes(limit = 4): Post[] {
+  return getAllPosts()
+    .filter((p) => typeof p.episodeNumber === "number" && p.spotifyUrl)
+    .sort((a, b) => (b.episodeNumber ?? 0) - (a.episodeNumber ?? 0))
+    .slice(0, limit);
 }
 
 export async function getPostBySlug(

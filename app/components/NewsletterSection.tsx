@@ -5,24 +5,30 @@ import { useState } from "react";
 export default function NewsletterSection() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
+    setError(false);
+
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
+    const email = formData.get("email");
 
     try {
-      await fetch(
-        "https://assets.mailerlite.com/jsonp/1149338/forms/135498912498498498/subscribe",
-        { method: "POST", body: formData, mode: "no-cors" }
-      );
+      const res = await fetch("/api/mailerlite-subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      if (!res.ok) throw new Error("subscribe failed");
+      setSubmitted(true);
     } catch {
-      // still show success — no-cors won't return a readable response
+      setError(true);
+    } finally {
+      setSubmitting(false);
     }
-
-    setSubmitting(false);
-    setSubmitted(true);
   };
 
   return (
@@ -48,7 +54,7 @@ export default function NewsletterSection() {
             <form onSubmit={handleSubmit} className="mt-8 flex gap-3">
               <input
                 type="email"
-                name="fields[email]"
+                name="email"
                 placeholder="tu@email.com"
                 required
                 className="flex-1 border border-border bg-transparent px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted focus:border-foreground"
@@ -61,6 +67,11 @@ export default function NewsletterSection() {
                 {submitting ? "..." : "Suscribirme"}
               </button>
             </form>
+          )}
+          {error && (
+            <p className="mt-4 text-sm text-red-600">
+              Hubo un error. Intenta de nuevo en un momento.
+            </p>
           )}
         </div>
       </div>

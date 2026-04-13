@@ -3,6 +3,7 @@ title: "Crisis existencial: cuando el traje de quien eras ya te queda chico"
 date: "2026-04-13"
 excerpt: "Crisis existencial no siempre es una caída. A veces es la señal de que la vida ya te movió de lugar y tú todavía estás peleando para quedarte."
 slug: "crisis-existencial-cuando-tu-vida-ya-no-te-sirve"
+episodeNumber: 136
 spotifyUrl: "https://open.spotify.com/episode/4Kag7G0ZLRE9ljstvrOBEv?si=xDQGfqJnRtSOUgwQ3asHwQ"
 ---
 
