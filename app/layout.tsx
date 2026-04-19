@@ -21,9 +21,54 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sé Tú Mismo — Podcast & Blog",
+  metadataBase: new URL("https://comosertumismo.com"),
+  title: {
+    default: "Sé Tú Mismo — Podcast & Blog de Gaxpar Uriarte",
+    template: "%s — Sé Tú Mismo",
+  },
   description:
-    "Un espacio para explorar el crecimiento personal, la autenticidad y el poder de ser tú mismo.",
+    "Podcast y blog de Gaxpar Uriarte sobre crecimiento personal, autenticidad y vida intencional. Episodios, reflexiones y recursos para ser tú mismo.",
+  applicationName: "Sé Tú Mismo",
+  authors: [{ name: "Gaxpar Uriarte" }],
+  creator: "Gaxpar Uriarte",
+  publisher: "Sé Tú Mismo",
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "es_ES",
+    url: "https://comosertumismo.com",
+    siteName: "Sé Tú Mismo",
+    title: "Sé Tú Mismo — Podcast & Blog de Gaxpar Uriarte",
+    description:
+      "Podcast y blog sobre crecimiento personal, autenticidad y vida intencional.",
+    images: [
+      {
+        url: "/podcast-cover.png",
+        width: 1200,
+        height: 1200,
+        alt: "Sé Tú Mismo — Podcast",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sé Tú Mismo — Podcast & Blog",
+    description:
+      "Crecimiento personal, autenticidad y vida intencional con Gaxpar Uriarte.",
+    images: ["/podcast-cover.png"],
+  },
 };
 
 export default function RootLayout({

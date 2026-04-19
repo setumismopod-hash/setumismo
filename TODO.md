@@ -25,8 +25,8 @@
 
 ## Mejoras pendientes
 
-- [ ] **SEO** — Agregar Open Graph image, meta tags por página, sitemap.xml, robots.txt
-- [ ] **Favicon** — Reemplazar el favicon default de Next.js con uno propio
+- [x] **SEO** — Open Graph + twitter cards, meta tags por página, sitemap.xml, robots.txt, JSON-LD (PodcastSeries + Article + PodcastEpisode)
+- [x] **Favicon** — Generado desde `podcast-cover.png` vía `app/icon.png`
 - [ ] **Analytics** — Integrar Google Analytics, Plausible u otro servicio de analíticas
 - [ ] **Episodios dinámicos** — Conectar los capítulos a una fuente de datos (API de Spotify, RSS del podcast, o archivos MDX) en vez de tenerlos hardcodeados
 - [ ] **Blog: más artículos** — Actualmente no hay contenido en la carpeta de posts

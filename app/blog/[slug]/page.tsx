@@ -16,14 +16,26 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
+  const url = `/blog/${post.slug}`;
+
   return {
-    title: `${post.title} — Sé Tú Mismo`,
+    title: post.title,
     description: post.excerpt,
+    alternates: { canonical: url },
     openGraph: {
+      type: "article",
+      url,
       title: post.title,
       description: post.excerpt,
-      type: "article",
       publishedTime: post.date,
+      authors: ["Gaxpar Uriarte"],
+      siteName: "Sé Tú Mismo",
+      locale: "es_ES",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
     },
   };
 }
@@ -51,6 +63,8 @@ function injectBanner(html: string, banner: React.ReactNode) {
   };
 }
 
+const SITE_URL = "https://comosertumismo.com";
+
 export default async function PostPage({ params }: { params: Params }) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
@@ -60,8 +74,66 @@ export default async function PostPage({ params }: { params: Params }) {
     ? injectBanner(post.content, null)
     : { before: post.content, after: "" };
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      "@type": "Person",
+      name: "Gaxpar Uriarte",
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Sé Tú Mismo",
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/podcast-cover.png`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/blog/${post.slug}`,
+    },
+    image: `${SITE_URL}/podcast-cover.png`,
+    inLanguage: "es",
+  };
+
+  const podcastEpisodeSchema = post.spotifyUrl
+    ? {
+        "@context": "https://schema.org",
+        "@type": "PodcastEpisode",
+        name: post.title,
+        description: post.excerpt,
+        datePublished: post.date,
+        url: `${SITE_URL}/blog/${post.slug}`,
+        associatedMedia: {
+          "@type": "MediaObject",
+          contentUrl: post.spotifyUrl,
+        },
+        partOfSeries: {
+          "@type": "PodcastSeries",
+          name: "Sé Tú Mismo",
+          url: SITE_URL,
+        },
+      }
+    : null;
+
   return (
     <div className="min-h-screen bg-background text-foreground pt-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      {podcastEpisodeSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(podcastEpisodeSchema) }}
+        />
+      )}
       <article className="mx-auto max-w-3xl px-6 py-16">
         <time className="text-sm text-muted">
           {new Date(post.date + "T12:00:00").toLocaleDateString("es-ES", {
