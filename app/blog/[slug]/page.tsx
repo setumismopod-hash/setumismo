@@ -74,13 +74,15 @@ export default async function PostPage({ params }: { params: Params }) {
     ? injectBanner(post.content, null)
     : { before: post.content, after: "" };
 
+  const publishedIso = new Date(post.date + "T12:00:00Z").toISOString();
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
     description: post.excerpt,
-    datePublished: post.date,
-    dateModified: post.date,
+    datePublished: publishedIso,
+    dateModified: publishedIso,
     author: {
       "@type": "Person",
       name: "Gaxpar Uriarte",
@@ -108,7 +110,7 @@ export default async function PostPage({ params }: { params: Params }) {
         "@type": "PodcastEpisode",
         name: post.title,
         description: post.excerpt,
-        datePublished: post.date,
+        datePublished: publishedIso,
         url: `${SITE_URL}/blog/${post.slug}`,
         associatedMedia: {
           "@type": "MediaObject",
