@@ -4,7 +4,7 @@ date: "2026-04-19"
 excerpt: "Descubre como tus estandares autoimpuestos sabotean tu bienestar y aprende a soltar la presion de que todo tenga sentido."
 slug: "autoconocimiento-autoexigencia-soltar-la-presion"
 episodeNumber: 137
-spotifyUrl: https://open.spotify.com/episode/ep137
+spotifyUrl: "https://open.spotify.com/episode/6Fl43lOSCcb9lD6JG0yZJU?si=Ftt1hKo3TRq7eDnG6xxoJw"
 ---
 
 Llevas semanas, meses, quiza anos con la sensacion de que algo no encaja. No es que te vaya mal. Es que nada se siente suficiente. Pones reglas para todo: para lo que puedes disfrutar, para lo que "cuenta" como logro, para lo que mereces y lo que no. Y sin darte cuenta, esas reglas se convirtieron en una jaula que tu mismo construiste. Este post explora por que el autoconocimiento a veces se convierte en una trampa cuando lo mezclas con estandares imposibles, y que pasa cuando te das permiso de soltar.
