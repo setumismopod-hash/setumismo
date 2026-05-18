@@ -4,7 +4,7 @@ date: "2026-05-10"
 excerpt: "Buscar el propósito de vida como gran misión agota. Cómo vivir con propósito sin presión resolviendo el problema más cercano que tienes hoy."
 slug: "proposito-de-vida-problema-mas-cercano"
 episodeNumber: 140
-spotifyUrl: "https://spotifycreators-web.app.link/e/FF6V38yxe3b"
+spotifyUrl: "https://open.spotify.com/episode/6zSQhaZyyeLFo4XMVayRmo?si=em53Uy_cTkOGIudfLZ75aQ"
 ---
 
 Tu propósito de vida no se te aparece un domingo a las 4 de la tarde mientras tomas café. No baja del cielo. No te lo entrega un test online ni un coach que te cobra para descubrirlo. Y aún así, llevas meses, quizás años, con la sensación de estar atrasado, como si todos hubieran recibido el manual menos tú. Esa búsqueda agota porque está mal planteada desde el inicio. Este post va sobre la presión por encontrar tu propósito y sobre una forma más simple de vivir con propósito sin perderte en el imaginario del futuro.

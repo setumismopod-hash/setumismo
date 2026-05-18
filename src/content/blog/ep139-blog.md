@@ -4,7 +4,7 @@ date: "2026-05-03"
 excerpt: "Ansiedad por incertidumbre cuando todo parece salir mal. Por qué la confianza no es sentirte tranquilo y cómo sostenerte cuando los planes se desarman."
 slug: "ansiedad-por-incertidumbre-confiar-planes-desarman"
 episodeNumber: 139
-spotifyUrl: "https://spotifycreators-web.app.link/e/uF3cebzxe3b"
+spotifyUrl: "https://open.spotify.com/episode/47kN9YUDC2cU0FnaVuuKDx?si=qrjcYKDZRi2AOus-muDPBA"
 ---
 
 La ansiedad por incertidumbre no aparece porque te falten recursos. Aparece cuando hay una fecha encima y la realidad no se está pareciendo a la imagen que te armaste en la cabeza. Te quedan dos días para algo que tenía que estar resuelto, abres el calendario, miras la lista, y nada calza. La guata se aprieta. Empiezas a anticipar todas las formas en que esto puede salir mal.

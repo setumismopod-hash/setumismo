@@ -4,7 +4,7 @@ date: "2026-04-24"
 excerpt: "Cómo dejar de sufrir por algo que sientes eterno. Todo pensamiento, toda sensación y todo dolor son pasajeros. Aprende a soltar sin fingir que soltaste."
 slug: "como-dejar-de-sufrir-por-algo"
 episodeNumber: 138
-spotifyUrl: "https://spotifycreators-web.app.link/e/Vbo2odzxe3b"
+spotifyUrl: "https://open.spotify.com/episode/1DrQvFkTi77oeonyljLQc6?si=F4LYFNPpTc2GPrpByzn9Bw"
 ---
 
 Cómo dejar de sufrir por algo que sientes eterno es la pregunta que aparece cuando el pecho se aprieta y no ves por dónde salir. Un cambio de casa, una ruptura, un trabajo que se termina, una etapa que se cierra sin saber qué viene. Sientes que estás atrapado y que esa sensación va a durar para siempre. No va a durar. Nada dura. Pero saberlo no basta, porque mientras estás adentro del hoyo, la mente te convence de que ese hoyo es la vida entera. Este post es sobre eso. Sobre la diferencia entre el dolor y el sentido que le pones al dolor, sobre por qué la vida a veces se cae a pedazos, y sobre qué hacer cuando lo único que puedes hacer es seguir respirando.
