@@ -1,31 +1,32 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "5 Preguntas Antes de tu Sesion — Se Tu Mismo",
+  title: "5 Preguntas Antes de tu Sesión",
   description:
-    "Un ejercicio breve de auto-observacion para prepararte antes de una sesion de coaching.",
+    "Un ejercicio breve de auto-observación para prepararte antes de una sesión de coaching.",
+  alternates: { canonical: "/recursos/preguntas-coaching" },
 };
 
 const questions = [
   {
-    q: "Describe un momento concreto de los ultimos dias donde esto que quieres trabajar aparecio.",
-    hint: "¿Donde estabas? ¿Que estaba pasando?",
+    q: "Describe un momento concreto de los últimos días donde esto que quieres trabajar apareció.",
+    hint: "¿Dónde estabas? ¿Qué estaba pasando?",
   },
   {
-    q: "En ese momento, ¿que sentiste?",
-    hint: "No lo que pensaste, sino lo que notaste en ti: en el cuerpo, en el animo, en la energia.",
+    q: "En ese momento, ¿qué sentiste?",
+    hint: "No lo que pensaste, sino lo que notaste en ti: en el cuerpo, en el ánimo, en la energía.",
   },
   {
-    q: "¿Como reaccionaste?",
-    hint: "¿Que hiciste, dijiste o dejaste de hacer?",
+    q: "¿Cómo reaccionaste?",
+    hint: "¿Qué hiciste, dijiste o dejaste de hacer?",
   },
   {
-    q: "Si esa misma situacion se repitiera mañana, ¿que te gustaria que fuera diferente?",
+    q: "Si esa misma situación se repitiera mañana, ¿qué te gustaría que fuera diferente?",
     hint: "No en lo externo, sino en ti.",
   },
   {
-    q: "¿Hay algo que ya sabes que deberias hacer distinto pero no logras?",
-    hint: "¿Que crees que te frena?",
+    q: "¿Hay algo que ya sabes que deberías hacer distinto pero no logras?",
+    hint: "¿Qué crees que te frena?",
   },
 ];
 
@@ -38,11 +39,11 @@ export default function PreguntasCoachingPage() {
           Recurso gratuito
         </p>
         <h1 className="font-[family-name:var(--font-display)] text-[32px] md:text-[40px] font-normal text-foreground leading-tight mb-4">
-          Antes de tu sesion
+          Antes de tu sesión
         </h1>
         <p className="text-[15px] text-muted leading-relaxed max-w-[480px] mb-12">
           Estas preguntas no tienen respuestas correctas y responderlas ayuda a
-          aclarar tu situacion. Tomate unos minutos.
+          aclarar tu situación. Tómate unos minutos.
         </p>
 
         {/* Questions */}
@@ -61,7 +62,7 @@ export default function PreguntasCoachingPage() {
         <div className="rounded-xl bg-surface p-8 mb-12">
           <p className="text-[15px] text-muted leading-relaxed italic">
             Si al responder sientes que el tema real puede ser otro, suele
-            suceder y de ser asi lo descubriremos.
+            suceder y de ser así lo descubriremos.
           </p>
         </div>
 
@@ -88,19 +89,11 @@ export default function PreguntasCoachingPage() {
               />
             </svg>
           </a>
-          <a
-            href="https://calendly.com/gaxpar"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface"
-          >
-            Agendar llamada de descubrimiento
-          </a>
         </div>
 
         {/* Footer */}
         <p className="font-[family-name:var(--font-mono)] text-[11px] text-muted/50 tracking-[0.1em] mt-16">
-          Como Ser Tu Mismo · comosertumismo.com
+          Cómo Ser Tú Mismo · comosertumismo.com
         </p>
       </div>
     </div>

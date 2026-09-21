@@ -19,16 +19,8 @@ export default function AboutSection() {
               Desde chico me sentí llamado a hacer las cosas de manera diferente. Dejar carreras, cambiar de rumbo, irme lejos, volver. Nunca me consideré un rebelde, sino alguien dejándose llevar por la necesidad de vivir una vida que tuviera sentido para mí y no dejarme arrastrar por la que &quot;me tocó&quot;. Desde siempre tuve una inquietud espiritual por explorar la vida desde otros ojos, y en ese camino me encontré con el autoconocimiento, donde hallé respuestas a preguntas que incesantemente buscaba afuera. Hoy estoy convencido de que todos tenemos una verdad dentro que vale la pena descubrir.
             </p>
             <p className="mt-4 text-muted leading-relaxed">
-              A eso me dedico: acompañar a personas a cambiar la forma en que perciben y crean su realidad para que puedan vivir una vida alineada con quienes realmente son. A través de Sé Tú Mismo, el coaching y el contenido que creo, busco abrir espacios de conversación profundos que inspiren a mirarnos con otros ojos y vivir desde un lugar más honesto con quienes somos.
+              A eso me dedico: acompañar a personas a cambiar la forma en que perciben y crean su realidad para que puedan vivir una vida alineada con quienes realmente son. A través de Sé Tú Mismo y del contenido que creo, busco abrir espacios de conversación profundos que inspiren a mirarnos con otros ojos y vivir desde un lugar más honesto con quienes somos.
             </p>
-            <a
-              href="https://calendly.com/gaxpar"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 inline-block rounded-full bg-accent px-8 py-3 text-sm font-medium text-background transition-opacity hover:opacity-80"
-            >
-              Trabaja conmigo
-            </a>
           </div>
         </div>
       </div>

@@ -76,9 +76,6 @@ export default function Navbar() {
               </div>
             )}
           </div>
-          <Link href="/coaching" className={`nav-link transition-colors hover:text-accent ${pathname.startsWith("/coaching") ? "text-foreground" : ""}`}>
-            Coaching
-          </Link>
         </div>
 
         {/* Mobile hamburger */}
@@ -156,13 +153,6 @@ export default function Navbar() {
                 </a>
               </div>
             </div>
-            <Link
-              href="/coaching"
-              className="transition-colors hover:text-foreground"
-              onClick={() => setMenuOpen(false)}
-            >
-              Coaching
-            </Link>
           </div>
         </div>
       )}

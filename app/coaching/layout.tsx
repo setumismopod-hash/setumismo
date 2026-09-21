@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: "Coaching 1:1 con Gaxpar Uriarte",
   description:
     "Sesiones de coaching personal para soltar la presión, conectar contigo y vivir con más claridad. Trabaja conmigo de forma directa y privada.",
+  robots: { index: false, follow: true },
   alternates: { canonical: "/coaching" },
   openGraph: {
     title: "Coaching 1:1 con Gaxpar Uriarte",
