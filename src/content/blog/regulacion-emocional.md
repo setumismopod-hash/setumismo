@@ -3,7 +3,8 @@ title: "Regulación emocional: por qué tu familia te hace explotar"
 date: "2026-03-11"
 excerpt: La rabia que sientes con tu familia no es contra ellos. Descubre cómo los patrones emocionales heredados te atrapan y qué hacer para soltar esa presión.
 slug: regulacion-emocional
-spotifyUrl: https://open.spotify.com/show/setumismo
+episodeNumber: 131
+spotifyUrl: "https://open.spotify.com/episode/1SPx7homXENQBPIkJooQTh"
 ---
 Vas un fin de semana a ver a tu familia y vuelves destruido. Irritable, ansioso, con una rabia que no sabes de dónde viene. Todo te molesta: lo que dicen, lo que no dicen, cómo se comportan, cómo respiran. Y tú ahí, intentando aguantar, sin entender por qué personas que se supone que son cercanas te provocan algo tan visceral. Si esto te suena, hay algo importante que necesitas ver, y tiene que ver con regulación emocional, con patrones que no elegiste y con una puerta que se abre justo donde más duele.
 
