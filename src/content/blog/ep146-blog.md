@@ -5,6 +5,7 @@ excerpt: "El autoconocimiento empieza cuando dejas de ser víctima de tu vida y 
 slug: "autoconocimiento-estar-quieto-no-es-estar-bien"
 episodeNumber: 146
 spotifyUrl: "https://open.spotify.com/episode/0dT14wi7UW94DZqpFEopvH"
+youtubeUrl: "https://www.youtube.com/watch?v=tuJAwwFGNdM"
 ---
 
 El autoconocimiento casi nunca empieza con una revelación bonita. Empieza un día cualquiera, cuando te das cuenta de que llevas meses haciendo lo mismo y te has convencido de que así está bien. Tienes los días resueltos, cumples, respondes "bien" cuando alguien pregunta. Y aun así, por dentro, sientes que algo no calza. No sabes ni qué quieres, no sabes hacia dónde vas. Esa sensación de estar estancado no es una falla. Es la primera pista de que estás quieto, no de que estás bien. Aquí vas a ver por qué confundir esas dos cosas te frena y qué cambia cuando dejas de hacerlo.

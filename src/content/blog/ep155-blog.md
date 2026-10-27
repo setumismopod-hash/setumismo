@@ -5,6 +5,7 @@ excerpt: "El autosabotaje no aparece cuando fracasas, aparece tres segundos desp
 slug: "autosabotaje-yo-soy-mi-propio-hater"
 episodeNumber: 155
 spotifyUrl: "https://open.spotify.com/episode/5YW0TzGpuFIOUmMqfPV508"
+youtubeUrl: "https://www.youtube.com/watch?v=nbRGQ6mvA4c"
 ---
 
 El autosabotaje no llega después del fracaso, llega tres segundos después de la idea. Se te ocurre proponer algo distinto en el trabajo, o publicar eso que llevas meses guardando, y antes de escribir la primera línea ya apareció la otra voz: no va a gustar, tú no eres así, mejor ni lo intento.

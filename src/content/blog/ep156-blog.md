@@ -5,6 +5,7 @@ excerpt: "El autosabotaje no siempre frena lo malo, a veces frena lo bueno. Por 
 slug: "autosabotaje-dices-que-no-cuando-es-si"
 episodeNumber: 156
 spotifyUrl: "https://open.spotify.com/episode/3EiqNTBrzjVX6PFewRoFF6"
+youtubeUrl: "https://www.youtube.com/watch?v=vadeCM7h4Pg"
 ---
 
 El autosabotaje no siempre aparece cuando algo sale mal. Muchas veces aparece justo en el punto donde algo se está sintiendo bien y ahí sale un no. Te hacen un cumplido y respondes que exageran. Te llega un regalo y calculas cuánto salió para devolver algo parecido antes de que se note. Se te ocurre un proyecto que te entusiasma y lo dejas guardado en una carpeta durante meses. En el episodio 156 de Sé Tú Mismo, ahora Cómo Ser Tú Mismo, parto de una escena bastante concreta de mi vida sexual y termino en el mismo lugar donde probablemente estás tú: en la creencia de que recibir cosas buenas está medio prohibido. Este artículo va de ese no automático y de lo que hay debajo.

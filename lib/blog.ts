@@ -12,6 +12,7 @@ export interface Post {
   date: string;
   excerpt: string;
   spotifyUrl?: string;
+  youtubeUrl?: string;
   episodeNumber?: number;
   cover?: string;
   content?: string;
@@ -32,6 +33,7 @@ export function getAllPosts(): Post[] {
         date: String(data.date),
         excerpt: data.excerpt,
         spotifyUrl: data.spotifyUrl,
+        youtubeUrl: data.youtubeUrl,
         episodeNumber: data.episodeNumber,
         cover: data.cover,
       };
@@ -44,14 +46,14 @@ export function getAllPosts(): Post[] {
 
 export function getLatestEpisodes(limit = 4): Post[] {
   return getAllPosts()
-    .filter((p) => typeof p.episodeNumber === "number" && p.spotifyUrl)
+    .filter((p) => typeof p.episodeNumber === "number" && (p.youtubeUrl || p.spotifyUrl))
     .sort((a, b) => (b.episodeNumber ?? 0) - (a.episodeNumber ?? 0))
     .slice(0, limit);
 }
 
 export async function getPostBySlug(
   slug: string
-): Promise<Post & { content: string; spotifyUrl?: string }> {
+): Promise<Post & { content: string; spotifyUrl?: string; youtubeUrl?: string }> {
   // Find the file that contains this slug — either by filename or frontmatter slug
   const fileNames = fs.readdirSync(postsDirectory).filter((name) => name.endsWith(".md"));
   let filePath = path.join(postsDirectory, `${slug}.md`);
@@ -84,6 +86,7 @@ export async function getPostBySlug(
     date: String(data.date),
     excerpt: data.excerpt,
     spotifyUrl: data.spotifyUrl,
+    youtubeUrl: data.youtubeUrl,
     content: htmlContent,
   };
 }

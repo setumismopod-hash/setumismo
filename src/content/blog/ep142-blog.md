@@ -5,6 +5,7 @@ excerpt: "La aceptación de uno mismo no es resignarse. Es dejar de pelearte con
 slug: "aceptacion-de-uno-mismo-base-para-transformarte"
 episodeNumber: 142
 spotifyUrl: "https://open.spotify.com/episode/0QpMdZUs204iYfxeqkebxD?si=wOCyZreqSPaFgilVr_z1dA"
+youtubeUrl: "https://www.youtube.com/watch?v=3ouxSw6Go3I"
 ---
 
 La aceptación de uno mismo suena a frase de taza de café, pero es lo que estás esquivando cada vez que piensas en quién quieres ser y olvidas quién eres ahora. Llevas semanas, quizás meses, parado en un lugar imaginario donde ya tienes lo que quieres y eres quien quieres ser. Y mientras tanto, las posibilidades reales del presente se van quedando a un costado, sin que las veas. Si te suena, este post es para ti. Vamos a ver por qué pensar en lo que te falta te quita energía, qué son las "cajitas mentales" que te hacen repetir patrones, y cómo habitar el proceso de cambio sin esperar a ser otra versión de ti para empezar a estar bien.

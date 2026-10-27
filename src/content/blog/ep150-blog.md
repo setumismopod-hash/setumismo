@@ -5,6 +5,7 @@ excerpt: "El miedo a ser auténtico te hace vivir tus relaciones a medias. Por q
 slug: "miedo-a-ser-autentico"
 episodeNumber: 150
 spotifyUrl: "https://open.spotify.com/episode/2FdFAPYjL4hKFWgtnqouVN"
+youtubeUrl: "https://www.youtube.com/watch?v=NnwHF0qtRYk"
 ---
 
 El miedo a ser auténtico casi nunca se ve como miedo. Se ve como prudencia: mides lo que cuentas, y guardas la parte de ti que podría ser rechazada, y a eso le llamas madurez. Lo haces con tu pareja, con tu familia, con tus amigos. Y funciona, porque nadie te ha vuelto a hacer daño. Pero hay algo que ese sistema no te muestra: todo lo que dejas de sentir mientras te proteges.

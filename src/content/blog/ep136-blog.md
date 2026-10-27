@@ -5,6 +5,7 @@ excerpt: "Crisis existencial no siempre es una caída. A veces es la señal de q
 slug: "crisis-existencial-cuando-tu-vida-ya-no-te-sirve"
 episodeNumber: 136
 spotifyUrl: "https://open.spotify.com/episode/4Kag7G0ZLRE9ljstvrOBEv?si=xDQGfqJnRtSOUgwQ3asHwQ"
+youtubeUrl: "https://www.youtube.com/watch?v=ESTUhjy-Fow"
 ---
 
 Una crisis existencial casi nunca llega como una tragedia. Llega como una sensación rara de que todo lo que antes funcionaba ahora pesa. Te levantas y la vida que tenías organizada de repente se siente apretada. El trabajo, el rol, la forma en que te presentas, la manera en que respondes cuando alguien te pregunta cómo estás. Nada cambió afuera y al mismo tiempo todo cambió. En este post te cuento lo que hablamos en el episodio 136 del podcast sobre ese momento en que el traje de quien eras ya te queda chico, por qué resistirte lo hace peor, y qué pasa cuando dejas de pelearle a la vida.

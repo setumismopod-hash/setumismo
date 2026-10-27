@@ -5,6 +5,7 @@ excerpt: "Regulación emocional cuando el impulso es buscar afuera lo que no enc
 slug: "a-veces-uno-esta-enojado-solamente"
 episodeNumber: 154
 spotifyUrl: "https://open.spotify.com/episode/3cAizLlaMpsfF1NVkBCpKu"
+youtubeUrl: "https://www.youtube.com/watch?v=hEN_TJOjLos"
 ---
 
 Casi todo lo que se enseña sobre regulación emocional parte de la misma premisa: que hay que hacer algo con lo que sientes. Respirarlo de cierta forma, escribirlo, convertirlo en aprendizaje. Y a veces sirve. Pero hay semanas en que la rabia, la pena y la confusión llegan juntas y ninguna técnica alcanza, y lo que aparece es otro impulso: buscar afuera lo que no encuentras adentro. De eso hablo en el episodio 154 del podcast, no desde la teoría sino desde el medio de una semana que me desarmó. La idea central es simple e incómoda a la vez: a veces uno está enojado solamente, y el error es querer hacer algo con eso.

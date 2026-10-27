@@ -5,6 +5,7 @@ excerpt: "Cómo reinventarse no es cambiar de ciudad ni de carrera. Es cambiar c
 slug: "como-reinventarse-sin-voltear-tu-vida"
 episodeNumber: 141
 spotifyUrl: "https://open.spotify.com/episode/7yv1oc40XZBg1jHJj8WdsM?si=Zgud5ruQSlCM5WQln2OGaw"
+youtubeUrl: "https://www.youtube.com/watch?v=lQtZuiTTR5g"
 ---
 
 Cuando piensas en cómo reinventarte, lo más probable es que imagines algo enorme: renunciar, mudarte de ciudad, empezar de cero en otro país. Y como suena a tanto, no haces nada. Te quedas donde estás, con la sensación de que tu vida es una rutina y de que deberías estar haciendo otra cosa. Pero esa idea de la reinvención como salto gigante es justo lo que te tiene atascado. Reinventarse puede ser mucho más pequeño que eso. Y mucho más cercano. En este post vas a ver de dónde viene esa ansiedad de no estar "a la altura", por qué tu identidad no es algo fijo, y una forma concreta de empezar a cambiar desde donde estás hoy.

@@ -5,6 +5,7 @@ excerpt: "Dejar de fingir ser alguien que no eres empieza por ver la máscara qu
 slug: "como-dejar-de-fingir-ser-alguien-que-no-eres"
 episodeNumber: 134
 spotifyUrl: https://open.spotify.com/episode/7jC17QspvFfq8s8LjoGegK?si=4CesQZdZTKWO_VVgN2CX1g
+youtubeUrl: "https://www.youtube.com/watch?v=w1dqyBF7gNI"
 ---
 
 Hay un tipo de cansancio que no se resuelve durmiendo. Es el que aparece cuando llevas semanas, meses o años filtrando todo lo que haces con una pregunta invisible: "¿qué van a pensar?". Y ese filtro tiene un costo que rara vez medimos, porque ya se volvió parte de cómo funcionamos. Si sientes que vives pendiente de una imagen que ni siquiera elegiste construir, este post es para ti.

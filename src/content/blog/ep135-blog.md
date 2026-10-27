@@ -5,6 +5,7 @@ excerpt: "Tu ego te muestra solo una fracción de quien eres. Descubre cómo el 
 slug: "autoconocimiento-multidimensionalidad-eres-mas-de-lo-que-crees"
 episodeNumber: 135
 spotifyUrl: https://open.spotify.com/episode/5c35gTqB6ybblitoPe3im7?si=h4K9SRUfQNa5thkHKw3hAg
+youtubeUrl: "https://www.youtube.com/watch?v=BUhZ81bvbDI"
 ---
 
 Hay una parte de ti que sabe más de lo que te permites reconocer. Y el proceso de autoconocimiento no empieza cuando encuentras respuestas, sino cuando dejas de censurarte las preguntas. Tu ego lleva años construyendo una versión sólida, predecible y controlable de quien eres. Pero esa versión es solo una fracción. Este post explora lo que pasa cuando te abres a la posibilidad de que eres mucho más que tu definición mental, y cómo eso cambia la forma en que tomas decisiones, te relacionas con la confusión y dejas de vivir en piloto automático.

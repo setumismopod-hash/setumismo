@@ -5,6 +5,7 @@ excerpt: "Sientes agotamiento emocional sin causa clara. Descubre por qué insis
 slug: "burnout-emocional-quemado-por-dentro"
 episodeNumber: 132
 spotifyUrl: "https://open.spotify.com/episode/6trU0oaDHXwTD77FTbVBBu"
+youtubeUrl: "https://www.youtube.com/watch?v=gi8b-9EjBfg"
 ---
 
 Te levantas cansado aunque hayas dormido 12 horas. Haces todo lo que se supone que tienes que hacer y aun así sientes el pecho apretado, la cabeza pesada y una irritabilidad que no sabes de dónde viene. No es flojera ni falta de voluntad. Es burnout emocional, y lo peor es que no siempre tiene una causa obvia. A veces viene de algo más silencioso: la fricción entre quien estás siendo y quien necesitas ser. Acá vamos a explorar qué pasa cuando te sientes quemado por dentro, por qué el impulso de "salir del hoyo" puede ser parte del problema, y qué puedes hacer cuando sientes que no das más.

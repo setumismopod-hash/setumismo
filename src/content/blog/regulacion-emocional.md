@@ -5,6 +5,7 @@ excerpt: La rabia que sientes con tu familia no es contra ellos. Descubre cómo 
 slug: regulacion-emocional
 episodeNumber: 131
 spotifyUrl: "https://open.spotify.com/episode/1SPx7homXENQBPIkJooQTh"
+youtubeUrl: "https://www.youtube.com/watch?v=PhHE63b5Z08"
 ---
 Vas un fin de semana a ver a tu familia y vuelves destruido. Irritable, ansioso, con una rabia que no sabes de dónde viene. Todo te molesta: lo que dicen, lo que no dicen, cómo se comportan, cómo respiran. Y tú ahí, intentando aguantar, sin entender por qué personas que se supone que son cercanas te provocan algo tan visceral. Si esto te suena, hay algo importante que necesitas ver, y tiene que ver con regulación emocional, con patrones que no elegiste y con una puerta que se abre justo donde más duele.
 

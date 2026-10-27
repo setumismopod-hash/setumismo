@@ -4,6 +4,7 @@ date: "2026-02-16"
 excerpt: ¿Tu mente no para? El ruido mental es la fricción entre lo que quieres y lo que es. Descubre de dónde viene y cómo silenciarlo con prácticas simples.
 slug: ruido-mental
 spotifyUrl: https://open.spotify.com/episode/749EK9MEZR3yWQKz7ziCX8?si=fSbDlYNuQFq0HFuQ1CcxPg
+youtubeUrl: "https://www.youtube.com/watch?v=PeOLhD8LCj8"
 ---
 El ruido mental es esa voz que no se calla. La que repite una y otra vez lo que debería haber pasado, lo que podría salir mal, lo que no estás haciendo bien. Y cuanto más intentas callarla, más fuerte habla.
 

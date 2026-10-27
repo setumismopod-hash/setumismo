@@ -5,6 +5,7 @@ excerpt: "Autoconocimiento real no es encontrar tu yo verdadero, es soltar la ve
 slug: "autoconocimiento-quien-soy-si-cambio"
 episodeNumber: 144
 spotifyUrl: "https://open.spotify.com/episode/24UUN4WevotR4zm0bev9VA"
+youtubeUrl: "https://www.youtube.com/watch?v=s09AGnCsAww"
 ---
 
 El autoconocimiento no es descubrir tu "yo verdadero" escondido en algún lado. Es darte cuenta de que cambiaste y ya no calzas en la versión de ti que cargas desde hace años. Te pasó algo: dejaste de querer lo mismo, dejaste de reírte de lo mismo, y ahora sigues actuando como el de antes porque es lo conocido. Y aprieta. Como una polera que te quedaba bien a los 18 y hoy te corta la respiración. En este post vas a ver por qué te aferras a quien eras, por qué soltar da tanto miedo, y qué tiene que ver todo esto con la ansiedad de tener que demostrar quién eres.

@@ -5,6 +5,7 @@ excerpt: "Ansiedad por incertidumbre cuando todo parece salir mal. Por qué la c
 slug: "ansiedad-por-incertidumbre-confiar-planes-desarman"
 episodeNumber: 139
 spotifyUrl: "https://open.spotify.com/episode/47kN9YUDC2cU0FnaVuuKDx?si=qrjcYKDZRi2AOus-muDPBA"
+youtubeUrl: "https://www.youtube.com/watch?v=XTjnCJhyKQU"
 ---
 
 La ansiedad por incertidumbre no aparece porque te falten recursos. Aparece cuando hay una fecha encima y la realidad no se está pareciendo a la imagen que te armaste en la cabeza. Te quedan dos días para algo que tenía que estar resuelto, abres el calendario, miras la lista, y nada calza. La guata se aprieta. Empiezas a anticipar todas las formas en que esto puede salir mal.

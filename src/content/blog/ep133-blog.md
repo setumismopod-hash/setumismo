@@ -5,6 +5,7 @@ excerpt: "El autoconocimiento empieza por soltar máscaras y creencias que no so
 slug: "autoconocimiento-soltar-lo-que-no-te-pertenece"
 episodeNumber: 133
 spotifyUrl: https://open.spotify.com/episode/4klfFA5afiwSpzJEmgwxE3?si=jlC8eKSaRr6fNQnziNRxMg
+youtubeUrl: "https://www.youtube.com/watch?v=O3zyoq2YN6M"
 ---
 
 Llevas meses, tal vez años, con esa sensación de que algo no encaja. Te levantas, cumples, produces, pero por dentro se siente vacío. Y no es que tu vida esté mal. Es que estás cargando cosas que no son tuyas: expectativas, roles, creencias que fuiste acumulando sin darte cuenta. El autoconocimiento no arranca con un gran descubrimiento. Arranca cuando te detienes y preguntas: "¿Esto que estoy cargando es mío o me lo puse encima para encajar?"

@@ -5,6 +5,7 @@ excerpt: "Crisis existencial y cero claridad. En vez de apurarse a ordenarlo tod
 slug: "crisis-existencial-permiso-de-ser-un-caos"
 episodeNumber: 157
 spotifyUrl: "https://open.spotify.com/episode/3WmKdMBss3VTfAujeJ2TBf"
+youtubeUrl: "https://www.youtube.com/watch?v=J3-LvLRO5Js"
 ---
 
 Una crisis existencial casi nunca se parece a la película. Se parece más a quedarte parado en la mitad del living con todos los muebles corridos y sin acordarte muy bien de por qué empezaste a moverlos. El episodio 157 de Sé Tú Mismo está grabado desde ahí adentro, no desde el después. Digo que estoy en crisis, que no sé qué quiero hacer, y en vez de correr a resolverlo me hago otra pregunta en el minuto 1:13: "¿Y por qué tengo que saber? Esa es mi pregunta. ¿Por qué simplemente no me permito ser?". De ahí sale la decisión rara que sostiene todo el capítulo: "Voy a permitirme ser un caos durante un tiempo".

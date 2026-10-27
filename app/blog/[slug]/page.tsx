@@ -69,7 +69,9 @@ export default async function PostPage({ params }: { params: Params }) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
 
-  const hasBanner = !!post.spotifyUrl;
+  // YouTube is the main platform; Spotify stays as fallback for older posts
+  const episodeUrl = post.youtubeUrl ?? post.spotifyUrl;
+  const hasBanner = !!episodeUrl;
   const { before, after } = hasBanner
     ? injectBanner(post.content, null)
     : { before: post.content, after: "" };
@@ -104,7 +106,7 @@ export default async function PostPage({ params }: { params: Params }) {
     inLanguage: "es",
   };
 
-  const podcastEpisodeSchema = post.spotifyUrl
+  const podcastEpisodeSchema = episodeUrl
     ? {
         "@context": "https://schema.org",
         "@type": "PodcastEpisode",
@@ -114,7 +116,7 @@ export default async function PostPage({ params }: { params: Params }) {
         url: `${SITE_URL}/blog/${post.slug}`,
         associatedMedia: {
           "@type": "MediaObject",
-          contentUrl: post.spotifyUrl,
+          contentUrl: episodeUrl,
         },
         partOfSeries: {
           "@type": "PodcastSeries",
@@ -149,7 +151,12 @@ export default async function PostPage({ params }: { params: Params }) {
         </h1>
         <div className="prose prose-neutral mt-12 max-w-none">
           <div dangerouslySetInnerHTML={{ __html: before }} />
-          {hasBanner && <PodcastBanner spotifyUrl={post.spotifyUrl!} />}
+          {hasBanner && (
+            <PodcastBanner
+              url={episodeUrl!}
+              platform={post.youtubeUrl ? "youtube" : "spotify"}
+            />
+          )}
           {after && <div dangerouslySetInnerHTML={{ __html: after }} />}
         </div>
       </article>

@@ -5,6 +5,7 @@ excerpt: "El sentido de vida no viene de afuera. Un ejercicio de tres partes, di
 slug: "sentido-de-vida-estar-perdido-es-parte-de-encontrarse"
 episodeNumber: 158
 spotifyUrl: "https://open.spotify.com/episode/1KdRmS5MBTwzQXANesOwkT"
+youtubeUrl: "https://www.youtube.com/watch?v=vfvAD9U05oM"
 ---
 
 "Sentido de vida" suena a pregunta enorme y por eso casi nadie la contesta en voz alta. En el episodio 158 de Sé Tú Mismo tampoco la contesto. Lo aviso en el minuto cero: esto no es un manual de instrucciones, llevo un tiempo medio caótico y medio perdido, así que el ejercicio lo hago en vivo junto a quien esté escuchando. De ahí sale la frase que sostiene todo el capítulo, en el 02:13: "Estar perdido es parte de encontrarse". Después viene lo concreto, que son tres cosas, dirección, prioridad y foco, y ocupa la segunda mitad del episodio. Acá está escrito. Sin promesa de claridad al final, porque cuando grabé todavía no aparecía.

@@ -5,6 +5,7 @@ excerpt: "Confiar en el proceso no es una frase bonita. Es atreverte a cruzar al
 slug: "confiar-en-el-proceso"
 episodeNumber: 147
 spotifyUrl: "https://open.spotify.com/episode/0noBpxAvntkS3aprshuUzs"
+youtubeUrl: "https://www.youtube.com/watch?v=CxDbLbSDc1M"
 ---
 
 Confiar en el proceso suena a frase de taza de café hasta que te toca hacerlo de verdad. Y hacerlo de verdad es esto: estás a la mitad de algo, no se ve bien, no sabes si va a funcionar, y la cabeza te dice que pares. Empiezas un proyecto con ganas y a las dos semanas ya lo estás soltando porque "no va a ninguna parte". Te pasa con lo que escribes, con lo que dibujas, con lo que grabas, con esa idea que tuviste y abandonaste antes de la primera versión decente. Aquí vas a ver por qué sueltas las cosas justo cuando se ponen feas, qué te enseñó a creer que el trayecto no cuenta, y qué cambia cuando aprendes a estar adentro del proceso sin garantía.

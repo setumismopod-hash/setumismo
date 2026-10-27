@@ -5,6 +5,7 @@ excerpt: "El autoconocimiento no empieza cambiándote, empieza dejando de juzgar
 slug: "autoconocimiento-dejar-de-juzgarte"
 episodeNumber: 145
 spotifyUrl: "https://open.spotify.com/episode/00hnWKUjFmcFfUCFHpz2hP"
+youtubeUrl: "https://www.youtube.com/watch?v=gCXABtWmCeQ"
 ---
 
 El autoconocimiento que tanto buscas no empieza cambiándote. Empieza cuando dejas de juzgarte tan duro por lo que sientes. Te acuestas en la noche y repasas todo lo que hiciste mal, lo que dijiste, lo que sentiste, y te castigas por ello. Crees que el problema es la pena, la rabia o la vergüenza. Pero ahí no está el problema. El problema es la definición que le pusiste encima: "esto está mal", "yo estoy mal". En este artículo vamos a ver por qué tu sufrimiento nace de esas definiciones, qué pasa cuando te permites sentir sin pelear, y por qué el cambio que quieres es una semilla, no un interruptor.

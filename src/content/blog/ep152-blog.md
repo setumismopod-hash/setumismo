@@ -5,6 +5,7 @@ excerpt: "No saber qué hacer con tu vida cansa. Pensar más no da claridad. Cua
 slug: "que-hacer-cuando-no-sabes-que-hacer"
 episodeNumber: 152
 spotifyUrl: "https://open.spotify.com/episode/511HrnaSpZT7ckIz0bNxZj"
+youtubeUrl: "https://www.youtube.com/watch?v=LvV8o4aWG-w"
 ---
 
 Buscar tu propósito de vida acostado, a las 3 de la mañana, dando vueltas al mismo pensamiento, tiene un problema: mientras más piensas, más confundido te sientes. Yo estoy pasando por un momento de cambio grande, y en el episodio 152 de Sé Tú Mismo cuento lo que encontré ahí adentro: no una respuesta, sino un cambio de dirección. Menos ideas en el aire y más pasos en la tierra. Si llevas meses intentando resolver tu vida dentro de tu cabeza y sigues en el mismo punto, este post recorre esa ruta: por qué pensar más no te da claridad, cómo empezar a armar una visión propia sin tenerlo todo resuelto, y cuatro pasos concretos para moverte aunque estés confundido.

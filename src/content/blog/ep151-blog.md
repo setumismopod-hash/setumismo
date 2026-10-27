@@ -5,6 +5,7 @@ excerpt: "No saber qué hacer con tu vida no es un error a corregir. Una pregunt
 slug: "sentido-de-vida-situacion-incierta"
 episodeNumber: 151
 spotifyUrl: "https://open.spotify.com/episode/2ebhmLTLkZtvU7hW1neOqX"
+youtubeUrl: "https://www.youtube.com/watch?v=PVjMLrqDdGI"
 ---
 
 El sentido de vida no se pierde en una gran crisis. Se va quedando de a poco en la rutina, mientras estás ocupado en otra cosa. De niño despertabas un domingo sin agenda, te aburrías un rato y desde ese aburrimiento decidías qué hacer. Hoy despiertas y la lista de pendientes ya está corriendo antes de que abras los ojos.

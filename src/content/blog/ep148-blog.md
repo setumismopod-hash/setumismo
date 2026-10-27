@@ -5,6 +5,7 @@ excerpt: "Vivir el presente cuesta cuando pones tu vida en pausa esperando el fu
 slug: "vivir-el-presente-tu-unica-responsabilidad-no-morir"
 episodeNumber: 148
 spotifyUrl: "https://open.spotify.com/episode/7irqG7Uu8cF5nQIpicPlw3"
+youtubeUrl: "https://www.youtube.com/watch?v=sJBgbB2Ztcs"
 ---
 
 Vivir el presente suena a frase de taza, hasta que te das cuenta de que llevas años esperando. Esperas tener más plata para relajarte, esperas la pareja para sentirte completo, esperas el momento correcto para atreverte a eso que quieres. Y mientras esperas, hoy pasa. Tu vida está ocurriendo ahora, en esta semana cualquiera, no en el futuro donde por fin todo va a calzar. En este post vas a ver por qué el "más adelante" te saca del único lugar donde puedes hacer algo, por qué juzgarte es la mejor forma de frenarte, y qué tiene que ver todo esto con la idea de que tu única responsabilidad es no morir.

@@ -4,6 +4,7 @@ date: "2026-02-27"
 excerpt: Tu vida funciona, pero algo no encaja. Vivir en piloto automático es la enfermedad silenciosa que nubla tu propósito. Descubre cómo salir.
 slug: vivir-en-piloto-automatico
 spotifyUrl: https://open.spotify.com/episode/0odc93E35AMeqlEWwnjspa?si=DxDYlRAXTwezDQ3_hOlusQ
+youtubeUrl: "https://www.youtube.com/watch?v=JxXxoevqo6w"
 ---
 Tienes trabajo. Tienes salud. Tienes gente que te quiere. Y aun así, algo no encaja. No sabes qué es, no puedes explicarlo, pero lo sientes. Como si estuvieras usando una ropa que no es tuya y nadie más lo nota.
 

@@ -5,6 +5,7 @@ excerpt: "Cómo saber qué quiero en la vida cuando llevas meses sin sentir un i
 slug: "como-saber-que-quiero-en-la-vida"
 episodeNumber: 143
 spotifyUrl: "https://open.spotify.com/episode/4XLvlXHshAiTucXTb8wdC2"
+youtubeUrl: "https://www.youtube.com/watch?v=UybShiL6s78"
 ---
 
 Cómo saber qué quiero en la vida no es una pregunta abstracta. Es la pregunta que aparece un martes a las 4 de la tarde, después de cerrar el laptop, cuando te das cuenta de que no recuerdas la última vez que hiciste algo solo porque te dio la gana. No por trabajo. No por demostrarle algo a alguien. Solo porque sí.

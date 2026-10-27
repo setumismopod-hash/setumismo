@@ -5,6 +5,7 @@ excerpt: "Cómo tomar decisiones difíciles cuando te da miedo y no te sientes p
 slug: "como-tomar-decisiones-dificiles"
 episodeNumber: 149
 spotifyUrl: "https://open.spotify.com/episode/6OhxDU03eDSenYher08fg4"
+youtubeUrl: "https://www.youtube.com/watch?v=CPqxwVJ8ZZ0"
 ---
 
 Cómo tomar decisiones difíciles es de esas cosas que nadie te enseña y que igual te toca resolver solo, casi siempre de noche y con la guata apretada. Tienes la decisión enfrente hace semanas. Sabes cuál es. Y aún así no la tomas, porque una parte de ti espera sentirse segura antes de mover un dedo. El problema es que esa seguridad no llega antes. Llega después, si es que llega. Aquí vas a ver por qué esperas a sentirte listo para algo que nunca te va a hacer sentir listo, por qué la decisión correcta suele ser la más incómoda, y qué hacer con esos pensamientos que aparecen justo cuando tu vida empieza a cambiar.
