@@ -6,6 +6,12 @@ import html from "remark-html";
 
 const postsDirectory = path.join(process.cwd(), "src/content/blog");
 
+// The blog goes up before the video does, with a "[PENDIENTE]" placeholder
+// that scripts/sync-youtube-links.py fills in later
+function linkOrUndefined(value: unknown): string | undefined {
+  return typeof value === "string" && /^https?:\/\//.test(value) ? value : undefined;
+}
+
 export interface Post {
   slug: string;
   title: string;
@@ -33,7 +39,7 @@ export function getAllPosts(): Post[] {
         date: String(data.date),
         excerpt: data.excerpt,
         spotifyUrl: data.spotifyUrl,
-        youtubeUrl: data.youtubeUrl,
+        youtubeUrl: linkOrUndefined(data.youtubeUrl),
         episodeNumber: data.episodeNumber,
         cover: data.cover,
       };
@@ -86,7 +92,7 @@ export async function getPostBySlug(
     date: String(data.date),
     excerpt: data.excerpt,
     spotifyUrl: data.spotifyUrl,
-    youtubeUrl: data.youtubeUrl,
+    youtubeUrl: linkOrUndefined(data.youtubeUrl),
     content: htmlContent,
   };
 }
