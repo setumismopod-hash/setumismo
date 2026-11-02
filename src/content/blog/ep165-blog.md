@@ -4,7 +4,7 @@ date: "2026-11-01"
 excerpt: "No termino lo que empiezo: por qué empezar se vuelve adictivo, cuánto cuesta postergar y cómo avanzar en tus proyectos sin quedarte esperando la inspiración."
 slug: "esperar-la-inspiracion"
 episodeNumber: 165
-youtubeUrl: "[PENDIENTE: URL del video en YouTube]"
+youtubeUrl: "https://www.youtube.com/watch?v=C8_Z3_TzXuE"
 ---
 
 "No termino lo que empiezo." Si te lo has dicho, seguro no fue una sola vez. Lo dijiste frente al cuadro empezado, la canción pendiente, ese texto que ibas a escribir. Y cuando por fin hay tiempo, no hay ganas, dices "después lo veo" y cada vez confías un poco menos en lo que te propones.
