@@ -4,7 +4,7 @@ date: "2026-11-08"
 excerpt: "Los juicios según la ontología del lenguaje explican por qué te afecta lo que dicen de ti y qué mirar antes de reaccionar, sin fingir que no te importa."
 slug: "juicios-ontologia-del-lenguaje-lo-que-digan"
 episodeNumber: 166
-youtubeUrl: "[PENDIENTE: URL del video en YouTube]"
+youtubeUrl: "https://www.youtube.com/watch?v=nYO_Z-nkkiI"
 ---
 
 Te pueden explicar los juicios según la ontología del lenguaje, y aun así un comentario te arruina el día. Un desconocido sin foto de perfil te trata de estúpido. En el almuerzo familiar alguien ningunea lo que haces. Tu jefe te manda un mensaje pasivo-agresivo. Y terminas en la ducha discutiendo con gente que no está ahí, ganando peleas que nunca pasaron.
