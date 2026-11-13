@@ -7,7 +7,10 @@ Uso:
     python3 scripts/sync-spotify-links.py            # dry run, no escribe
     python3 scripts/sync-spotify-links.py --write    # escribe los archivos
 
-Lee SPOTIFY_CLIENT_ID y SPOTIFY_CLIENT_SECRET desde .env.local
+Lee SPOTIFY_CLIENT_ID y SPOTIFY_CLIENT_SECRET desde variables de entorno
+(GitHub Actions) o, si no estan, desde .env.local (local).
+
+Corre solo todos los dias via .github/workflows/sync-youtube-links.yml
 """
 import base64, json, os, re, subprocess, sys, unicodedata
 from pathlib import Path
@@ -21,6 +24,8 @@ SHOW_CANDIDATES = ["2ERQlZQycD77mt8rVM0Be5", "2jheJptKOT2FoAyUCovFzf"]
 def load_env():
     env = {}
     path = ROOT / ".env.local"
+    if not path.exists():
+        return env
     for line in path.read_text(encoding="utf-8").splitlines():
         line = line.strip()
         if not line or line.startswith("#") or "=" not in line:
@@ -104,9 +109,11 @@ def parse_rss():
 def main():
     write = "--write" in sys.argv
     env = load_env()
-    cid, secret = env.get("SPOTIFY_CLIENT_ID"), env.get("SPOTIFY_CLIENT_SECRET")
+    cid = os.environ.get("SPOTIFY_CLIENT_ID") or env.get("SPOTIFY_CLIENT_ID")
+    secret = os.environ.get("SPOTIFY_CLIENT_SECRET") or env.get("SPOTIFY_CLIENT_SECRET")
     if not cid or not secret:
-        sys.exit("Faltan SPOTIFY_CLIENT_ID / SPOTIFY_CLIENT_SECRET en .env.local")
+        sys.exit("Faltan SPOTIFY_CLIENT_ID / SPOTIFY_CLIENT_SECRET "
+                 "(variables de entorno o .env.local)")
 
     print("Autenticando...")
     token = get_token(cid, secret)
@@ -145,13 +152,18 @@ def main():
         if not m:
             continue
         num = int(m.group(1))
-        if not pend.search(text):
-            continue
+        has_field = re.search(r"^spotifyUrl:", text, re.M)
+        if has_field and not pend.search(text):
+            continue  # ya tiene link
         url = links.get(num)
         if not url:
             print(f"  {md.name}: ep{num} sin link en Spotify")
             continue
-        new = pend.sub(f'spotifyUrl: "{url}"', text, count=1)
+        if has_field:
+            new = pend.sub(f'spotifyUrl: "{url}"', text, count=1)
+        else:
+            # Los posts nuevos no traen el campo: lo agregamos despues de episodeNumber
+            new = re.sub(r"^(episodeNumber:.*)$", rf'\1\nspotifyUrl: "{url}"', text, count=1, flags=re.M)
         if write:
             md.write_text(new, encoding="utf-8")
         print(f"  {'escrito ' if write else 'pendiente'} {md.name} -> {url}")
