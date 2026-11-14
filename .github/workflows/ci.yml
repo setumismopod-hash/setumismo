@@ -1,0 +1,32 @@
+name: CI
+
+# Revisa que los posts esten bien escritos y que el sitio compile
+# antes de que el cambio llegue a produccion.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate blog posts
+        run: python3 scripts/validate-blog.py --github
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      # Hay errores de lint antiguos; se muestran pero no bloquean
+      - name: Lint
+        run: npm run lint
+        continue-on-error: true
+
+      - name: Build
+        run: npm run build
