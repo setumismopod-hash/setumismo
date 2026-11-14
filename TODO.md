@@ -40,3 +40,12 @@
 
 - [x] **ep137 `spotifyUrl`** — URL real del episodio agregada
 - [ ] **Re-validar Rich Results** — Confirmar que los warnings de `datePublished`/`dateModified` desaparecieron tras el fix ISO 8601
+
+## 📌 Ideas para darle una vuelta (sin compromiso)
+
+- [ ] **Setumismo como entorno para construir** — Que la propuesta de valor apunte a un espacio donde la gente pueda *desarrollar sus propias cosas* (era del building: las herramientas ya están). Formatos posibles a explorar:
+  - GPT / asistente IA personalizado con la voz y el enfoque de Setumismo (autoconocimiento → acción)
+  - Web con guías paso a paso, instrucciones, plantillas y recursos para pasar de idea a proyecto
+  - Usar el dominio + página que hoy no se ocupa como laboratorio/landing de esto
+  - Preguntas abiertas: ¿qué construye la gente (proyectos personales, hábitos, negocios, contenido)? ¿gratis, comunidad, pago? ¿cómo conecta con podcast y coaching?
+  - Primer paso posible: un MVP chico (una guía + un prompt/GPT) y medir interés con la newsletter
